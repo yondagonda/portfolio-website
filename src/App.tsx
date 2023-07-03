@@ -6,6 +6,8 @@ import Description from './components/Description';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,6 +21,8 @@ function App() {
         <About />
         <Projects />
         <Skills />
+        <Resume />
+        <Contact />
       </div>
     </div>
   );

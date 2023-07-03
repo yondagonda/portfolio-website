@@ -34,3 +34,14 @@
 .gradientbg {
   background-image: linear-gradient(to right, #3f5bb5, #7a3ac4, #df3b71);
 }
+
+.avatargradientbg {
+  background-image: linear-gradient(to right, #4888bd, #2f72be, #2c58d1);
+}
+
+.interestedtext {
+  background: linear-gradient(to right, #4888bd, #2f72be, #2c58d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+}

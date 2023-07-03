@@ -6,44 +6,44 @@ import { useEffect } from 'react';
 import firebaseicon from '../assets/firebase.png';
 
 const Skills = () => {
-  const [ref, inView] = useInView({ triggerOnce: false });
-  const [ref2, inView2] = useInView({ triggerOnce: false });
+  // const [ref, inView] = useInView({ triggerOnce: false });
+  // const [ref2, inView2] = useInView({ triggerOnce: false });
 
-  const animation = useAnimation();
-  const animation2 = useAnimation();
+  // const animation = useAnimation();
+  // const animation2 = useAnimation();
 
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        opacity: 1,
-        transition: {
-          y: { type: 'spring', mass: 0.5, damping: 8, stiffness: 200 },
-        },
-        y: 0,
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-        y: 50,
-      });
-    }
-    if (inView2) {
-      animation2.start({
-        opacity: 1,
-        transition: {
-          y: { type: 'spring', mass: 0.5, damping: 8, stiffness: 200 },
-        },
-        y: 0,
-      });
-    }
-    if (!inView2) {
-      animation2.start({
-        opacity: 0,
-        y: 100,
-      });
-    }
-  }, [inView, inView2]);
+  // useEffect(() => {
+  //   if (inView) {
+  //     animation.start({
+  //       opacity: 1,
+  //       transition: {
+  //         y: { type: 'spring', mass: 0.5, damping: 8, stiffness: 200 },
+  //       },
+  //       y: 0,
+  //     });
+  //   }
+  //   if (!inView) {
+  //     animation.start({
+  //       opacity: 0,
+  //       y: 50,
+  //     });
+  //   }
+  //   if (inView2) {
+  //     animation2.start({
+  //       opacity: 1,
+  //       transition: {
+  //         y: { type: 'spring', mass: 0.5, damping: 8, stiffness: 200 },
+  //       },
+  //       y: 0,
+  //     });
+  //   }
+  //   if (!inView2) {
+  //     animation2.start({
+  //       opacity: 0,
+  //       y: 100,
+  //     });
+  //   }
+  // }, [inView, inView2]);
 
   return (
     <section className="flex flex-col items-center h-[120vh] pt-[12vh] border-4 bg-gray-100 w-full">
