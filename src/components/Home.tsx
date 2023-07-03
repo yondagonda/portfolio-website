@@ -26,7 +26,7 @@ const Home = () => {
   };
 
   return (
-    <motion.div
+    <motion.header
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -39,23 +39,23 @@ const Home = () => {
           alt="profile shot"
         />
       </motion.div>
-      <motion.div variants={childVariants} className="text-2xl py-4">
+      <motion.h3 variants={childVariants} className="text-2xl py-4">
         Johny Ha
-      </motion.div>
-      <motion.header
+      </motion.h3>
+      <motion.h1
         variants={childVariants}
         className="text-6xl font-bold text-center pt-2"
       >
         Software Engineer
-      </motion.header>
-      <motion.div
+      </motion.h1>
+      <motion.p
         variants={childVariants}
         className="max-w-[450px] text-center py-6"
       >
         Passionate about problem solving, I thrive on the thrill of unraveling
         intricate puzzles and persisting until I discover the most effective
         solutions.
-      </motion.div>
+      </motion.p>
 
       <motion.button
         className="py-3 px-5 border bg-blue-600 text-white font-bold rounded-full"
@@ -63,7 +63,7 @@ const Home = () => {
       >
         Find out more
       </motion.button>
-    </motion.div>
+    </motion.header>
   );
 };
 

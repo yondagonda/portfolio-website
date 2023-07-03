@@ -18,7 +18,8 @@ const Navbar = () => {
       backdrop-blur-[10px] z-[10] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#ffffff90]"
     >
       <button>Home</button>
-      <button>About Me</button>
+      {/* use an anchor tag for these instead? */}
+      <h3>About Me</h3>
       <button>Portfolio</button>
       <button>Skills</button>
       <button>Resume</button>
