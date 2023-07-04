@@ -17,6 +17,10 @@ function App() {
   // setup little monitor preview ting
   // download CV button
 
+  //mobile problems:
+  // nav bar needs to be bigger
+  // horizontal scrolling issue
+
   return (
     <div className="App flex justify-center">
       <div className="flex flex-col relative items-center max-w-[screen]">

@@ -126,12 +126,15 @@ const Contact = () => {
         </p>
       </div>
 
-      <section className="sm:flex sm:gap-3 w-[87%] max-w-[830px] mb-[10vh]">
+      <section
+        className="flex flex-col sm:flex-row sm:gap-3 w-[87%] max-w-[950px] mb-[10vh]
+      items-center sm:items-start md:gap-4"
+      >
         <motion.div
           ref={ref4}
           initial={{ x: -200, opacity: 0 }}
           animate={animation4}
-          className=""
+          className="w-full sm:w-fit"
         >
           <Form />
         </motion.div>
@@ -140,8 +143,8 @@ const Contact = () => {
           initial={{ x: 200, opacity: 0 }}
           animate={animation3}
           className="p-4 bg-white rounded-3xl outline outline-1 outline-gray-300 
-        shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col gap-2 h-fit max-w-[350px]
-        margininlineauto"
+        shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col gap-2 h-fit max-w-[310px]
+         lg:w-full min-w-[250px] sm:min-w-[200px]"
         >
           <a
             href="https://www.linkedin.com/in/johny-ha-63a596189/"
