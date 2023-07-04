@@ -52,14 +52,14 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="flex flex-col items-center h-[100vh] pt-[14vh] w-[100vw]"
+      className="flex flex-col items-center min-h-[100vh] pt-[14vh] w-[100vw] mb-10"
     >
-      <section className="max-w-[950px] text-center">
+      <section className="max-w-[950px] text-center flex flex-col items-center">
         <motion.h3
           ref={ref}
           initial={{ y: 50, opacity: 0 }}
           animate={animation}
-          className="text-3xl pb-2 text-gray-700 font-bold"
+          className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-2 text-gray-700 font-bold"
         >
           Resume
         </motion.h3>
@@ -67,19 +67,24 @@ const Resume = () => {
           ref={ref2}
           initial={{ y: 150, opacity: 0 }}
           animate={animation2}
-          className="text-8xl font-bold text-center interestedtext py-2"
+          className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl 
+          font-bold text-center max-w-[90%] interestedtext py-2"
         >
           Interested in working with me?
         </motion.h2>
       </section>
       <section className="pt-[7vh] max-w-[800px]">
-        <article className="grid grid-cols-2 avatargradientbg rounded-3xl justify-items-center">
+        <article
+          className="avatargradientbg rounded-3xl max-w-[86%] xs:max-w-[410px]
+        justify-items-center items-center flex flex-col margininlineauto 
+        md:flex-row md:max-w-[75%] lg:max-w-[750px] md:gap-2 lg:gap-6"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
-            width="340px"
-            height="340px"
             viewBox="0 0 200 200"
+            className="w-[200px] h-[200px] sm:w-[260px] sm:h-[260px] 
+            md:min-w-[280px] md:min-h-[280px] lg:min-w-[320px] lg:min-h-[320px]"
           >
             <g id="svga-group-wrapper">
               <g id="svga-group-backs-single"></g>
@@ -564,8 +569,11 @@ const Resume = () => {
             </g>
             <defs id="SvgjsDefs20002"></defs>
           </svg>
-          <div className="flex flex-col gap-4 pr-20">
-            <p className="text-white pt-[23%] pb-1.5 text-lg text-center">
+          <div className="flex flex-col gap-4 md:pr-8 lg:pr-18 items-center pb-6 lg:pb-12">
+            <p
+              className="text-white max-w-[90%] pt-5 md:pt-[23%] pb-1.5 sm:text-lg text-center
+            text-base"
+            >
               If you have any further inquiries, feel free to reach out.
               Additionally, you can download my resume below.
             </p>

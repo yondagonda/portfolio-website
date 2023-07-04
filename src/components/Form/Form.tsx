@@ -97,11 +97,12 @@ const Form = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col gap-2 px-5 pt-5 pb-4 bg-white rounded-3xl w-fit items-center
-  outline outline-1 outline-gray-300 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+        className="flex flex-col gap-2 px-5 pt-5 pb-4 bg-white rounded-3xl  items-center
+  outline outline-1 outline-gray-300 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]
+  margininlineauto sm:w-fit mb-3"
       >
-        <div className="flex gap-3">
-          <div>
+        <div className="flex flex-col xs:flex-row gap-3 w-full">
+          <div className="">
             <label htmlFor="name"></label>
             <input
               type="text"
@@ -111,11 +112,11 @@ const Form = () => {
               name="from_name"
               placeholder="Your name"
               className="bg-gray-100 outline outline-gray-200 outline-1 rounded-md p-2 
-        placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150"
+        placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full"
               required
             />
           </div>
-          <div>
+          <div className="">
             <label htmlFor="email"></label>
             <input
               type="email"
@@ -124,7 +125,7 @@ const Form = () => {
               onChange={(e) => setEmailInput(e.target.value)}
               name="from_email"
               className="bg-gray-100 outline outline-gray-200 outline-1 rounded-md p-2 
-        placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150"
+        placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full"
               placeholder="Your email"
               required
             />

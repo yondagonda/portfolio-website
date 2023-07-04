@@ -92,14 +92,15 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center h-[75vh] pt-[12vh] border-4 bg-gray-100 w-[100vw]"
+      className="flex flex-col items-center min-h-[75vh] pt-[12vh] border-4 bg-gray-100 w-[100vw]"
     >
       <section className="max-w-[800px]">
         <motion.h3
           ref={ref}
           initial={{ y: 50, opacity: 0 }}
           animate={animation}
-          className="text-3xl pb-4 text-center text-gray-700 font-bold"
+          className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-2 text-gray-700 font-bold 
+          text-center"
         >
           Contact
         </motion.h3>
@@ -107,12 +108,14 @@ const Contact = () => {
           ref={ref2}
           initial={{ y: 100, opacity: 0 }}
           animate={animation2}
-          className="text-7xl font-bold text-center"
+          className="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl 
+          font-bold max-w-[90%] py-2 margininlineauto"
         >
           Reach out to me any way you want.
         </motion.h2>
       </section>
-      <div className="py-12 text-center">
+
+      <div className=" py-4 xs:py-8 sm:py-12 text-xs xs:text-sm sm:text-base text-center max-w-[85%]">
         <p>
           Fill in the form on the left with your details and I will get back to
           you as soon as I can.
@@ -122,11 +125,13 @@ const Contact = () => {
           the right.
         </p>
       </div>
-      <section className="flex  gap-5">
+
+      <section className="sm:flex sm:gap-3 w-[87%] max-w-[830px] mb-[10vh]">
         <motion.div
           ref={ref4}
           initial={{ x: -200, opacity: 0 }}
           animate={animation4}
+          className=""
         >
           <Form />
         </motion.div>
@@ -135,7 +140,8 @@ const Contact = () => {
           initial={{ x: 200, opacity: 0 }}
           animate={animation3}
           className="p-4 bg-white rounded-3xl outline outline-1 outline-gray-300 
-        shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col gap-2 h-fit"
+        shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col gap-2 h-fit max-w-[350px]
+        margininlineauto"
         >
           <a
             href="https://www.linkedin.com/in/johny-ha-63a596189/"

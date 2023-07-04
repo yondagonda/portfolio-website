@@ -21,7 +21,7 @@ const Navbar = () => {
       }}
       className="flex fixed justify-center flex gap-2 xs:gap-4 sm:px-2
        sm:gap-6 sm:px-4 md:gap-8 rounded-full top-6 
-      backdrop-blur-[10px] z-[10] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#ffffff] 
+      backdrop-blur-[10px] z-[100] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#ffffff] 
       items-center py-1 px-2 sm:py-1.5"
     >
       <button

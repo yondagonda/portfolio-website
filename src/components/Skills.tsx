@@ -471,7 +471,7 @@ const Skills = () => {
             </div>
           </motion.article>
         </div>
-        <div className="sm:flex gap-4">
+        <div className="sm:flex gap-4 mb-[5vh]">
           <motion.article
             ref={ref3}
             initial={{ scale: 0 }}
