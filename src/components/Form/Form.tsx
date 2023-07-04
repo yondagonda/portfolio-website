@@ -148,7 +148,7 @@ const Form = () => {
         <button
           type="submit"
           className="px-8 py-2.5 bg-blue-600 text-white w-fit rounded-xl font-bold
-      mt-2"
+      mt-2 hover:bg-blue-700 duration-150"
         >
           Submit
         </button>

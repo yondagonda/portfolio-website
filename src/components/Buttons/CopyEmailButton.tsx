@@ -16,7 +16,7 @@ function CopyEmailButton() {
 
   return (
     <button
-      className="py-3 px-8 rounded-2xl bg-blue-600 text-white font-bold"
+      className="py-3 px-8 rounded-2xl bg-blue-600 text-white font-bold hover:bg-blue-700 duration-150"
       onClick={handleCopyClick}
     >
       {isCopied ? 'Email Copied!' : 'Copy Email'}

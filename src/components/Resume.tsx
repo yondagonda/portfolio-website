@@ -5,6 +5,11 @@ import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 
 const Resume = () => {
+  const handleNavButtonClick = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    section?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const [ref, inView] = useInView({ triggerOnce: false });
   const [ref2, inView2] = useInView({ triggerOnce: false });
 
@@ -47,14 +52,14 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="flex flex-col items-center h-[100vh] pt-[14vh] border-4"
+      className="flex flex-col items-center h-[100vh] pt-[14vh] w-[100vw]"
     >
       <section className="max-w-[950px] text-center">
         <motion.h3
           ref={ref}
           initial={{ y: 50, opacity: 0 }}
           animate={animation}
-          className="text-3xl pb-2"
+          className="text-3xl pb-2 text-gray-700 font-bold"
         >
           Resume
         </motion.h3>
@@ -565,13 +570,16 @@ const Resume = () => {
               Additionally, you can download my resume below.
             </p>
             <div className="flex flex-col gap-2 items-center">
-              <button className="flex items-center gap-2 px-6 py-2 bg-blue-500 rounded-3xl w-fit">
+              <button
+                className="flex items-center gap-2 px-6 py-2 bg-blue-500 rounded-3xl w-fit
+              group"
+              >
                 <svg
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="#ffffff"
                   height={18}
                   width={18}
+                  className="group-hover:translate-y-[2px] duration-100 fill-white"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g
@@ -622,7 +630,11 @@ const Resume = () => {
                 </svg>
                 <h4 className="text-xl text-white font-bold">Download CV</h4>
               </button>
-              <button className="flex items-center gap-2 px-6 py-2 bg-white rounded-3xl w-fit">
+              <button
+                onClick={() => handleNavButtonClick('contact')}
+                className="flex items-center gap-2 px-6 py-2 bg-white rounded-3xl w-fit
+                hover:bg-gray-200 duration-200"
+              >
                 <svg
                   viewBox="0 0 20 20"
                   version="1.1"

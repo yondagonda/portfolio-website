@@ -118,16 +118,16 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col h-[115vh] items-center outline outline-gray-200 pt-[13vh] 
-    bg-gray-100 w-screen "
+      className="flex flex-col min-h-[105vh] items-center pt-[12vh] 
+    bg-gray-100 w-[100vw]"
     >
-      <div className="flex flex-col items-start">
-        <section className="flex flex-col items-start max-w-[850px] ml-[5vw]">
+      <div className="flex flex-col items-center xl:items-start">
+        <section className="flex flex-col items-start w-[85%] max-w-[850px] xl:pl-[10vw] 2xl:pl-8">
           <motion.h3
             ref={ref}
             initial={{ y: 50, opacity: 0 }}
             animate={animation}
-            className="text-3xl pb-4"
+            className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-4 text-gray-700 font-bold"
           >
             About Me
           </motion.h3>
@@ -135,21 +135,27 @@ const About = () => {
             ref={ref2}
             initial={{ y: 100, opacity: 0 }}
             animate={animation2}
-            className="text-8xl font-bold text-start"
+            className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl 
+            font-bold text-start max-w-[90%]"
           >
             My tech stack and expertise.
           </motion.h2>
         </section>
-        <section className="grid grid-cols-[60%_40%] gap-4 max-w-[1250px] pt-[8vh]">
+        <section
+          className="lg:grid lg:grid-cols-[57%_43%] gap-4 lg:max-w-[85%] 
+           2xl:max-w-[1250px] 
+        pt-[3vh] md:pt-[5vh] xl:pt-[7vh] margininlineauto "
+        >
           <article
-            className="bg-white px-10 rounded-2xl outline-[1px] outline outline-gray-200 text-xl
-          py-12"
+            className="bg-white rounded-2xl outline-[1px] outline outline-gray-200 
+            text-xl py-6 px-5 sm:px-8 md:px-10 md:py-10 max-w-[85%] sm:max-w-[580px]
+            margininlineauto mb-3 md:mb-5 lg:mb-0 md:max-w-[80%] lg:max-w-full"
           >
-            <h4 className="font-bold text-2xl">
+            <h4 className="font-bold text-lg sm:text-2xl">
               Problem solver and tech enthusiast at heart
             </h4>
             <div className="text-gray-800">
-              <p className="py-5 text-xl">
+              <p className="py-5 text-sm sm:text-lg 2xl:text-xl">
                 <em>
                   Growing up, I found myself having a strong inclination towards
                   all things related to technology. From Jailbreaking my friends
@@ -159,22 +165,26 @@ const About = () => {
                   abilities.
                 </em>
               </p>
-              <p>
+              <p className="text-sm sm:text-xl 2xl:text-2xl">
                 Nowadays, my passion lies in software development. Creating new
                 experiences, solving complex problems, and implementing visually
                 appealing designs is what I love doing best.
               </p>
             </div>
           </article>
-          <div className="grid grid-rows-2 gap-4">
+          <div
+            className="sm:flex sm:flex-col sm:gap-4 lg:h-fit
+          items-start"
+          >
             <motion.article
               ref={ref3}
               initial={{ scale: 0 }}
               animate={animation3}
-              className="bg-white px-8 rounded-2xl outline-[1px] outline outline-gray-200 
-            py-6"
+              className="bg-white rounded-2xl outline-[1px] outline outline-gray-200 
+              sm:px-8 sm:py-6 px-4 py-4 max-w-[85%] sm:max-w-[580px] margininlineauto h-fit
+              lg:py-8"
             >
-              <h4 className="font-bold text-xl">Attention to Detail</h4>
+              <h4 className="font-bold sm:text-xl">Attention to Detail</h4>
               <img
                 className="pt-2"
                 src={detail}
@@ -185,12 +195,13 @@ const About = () => {
               ref={ref4}
               initial={{ scale: 0 }}
               animate={animation4}
-              className="bg-white px-8 rounded-2xl outline-[1px] outline outline-gray-200 
-            py-6 "
+              className="bg-white rounded-2xl outline-[1px] outline outline-gray-200 
+              sm:px-8 sm:py-6 px-4 py-4 max-w-[85%] margininlineauto h-fit mt-2 sm:mt-0
+              sm:max-w-[580px] lg:py-8"
             >
               <div className="flex items-baseline gap-1.5">
-                <h4 className="font-bold text-xl">Performance Focused</h4>
-                <span className="text-sm text-gray-800">
+                <h4 className="font-bold sm:text-xl">Performance Focused</h4>
+                <span className="text-xs sm:text-sm text-gray-800">
                   via Google Lighthouse
                 </span>
               </div>
@@ -203,15 +214,15 @@ const About = () => {
           </div>
         </section>
         <section
-          className="gradientbg max-w-[1250px] w-full grid grid-cols-2 rounded-2xl my-5
-        p-8"
+          className="gradientbg xl:max-w-[1200px] w-full md:grid md:grid-cols-2 rounded-2xl my-5
+        p-3 lg:p-8 max-w-[85%] margininlineauto mb-14 sm:mt-8"
         >
-          <div className="text-white p-10 flex flex-col gap-4">
+          <div className="text-white p-2 sm:p-10 flex flex-col gap-4">
             <motion.h3
               ref={ref5}
               initial={{ scale: 0 }}
               animate={animation5}
-              className="text-3xl font-bold"
+              className="text-xl sm:text-3xl font-bold"
             >
               A little insight into my work
             </motion.h3>
@@ -219,7 +230,7 @@ const About = () => {
               ref={ref6}
               initial={{ scale: 0 }}
               animate={animation6}
-              className="text-lg"
+              className="text-sm sm:text-lg"
             >
               Today I work with TypeScript in React, Next.js as a full stack
               framework, and Tailwind for CSS. As you can probably tell, I also

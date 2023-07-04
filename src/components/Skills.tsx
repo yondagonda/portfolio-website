@@ -1,68 +1,122 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { InView, useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import firebaseicon from '../assets/firebase.png';
 
 const Skills = () => {
-  // const [ref, inView] = useInView({ triggerOnce: false });
-  // const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref, inView] = useInView({ triggerOnce: false });
+  const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref3, inView3] = useInView({ triggerOnce: false });
 
-  // const animation = useAnimation();
-  // const animation2 = useAnimation();
+  const animation = useAnimation();
+  const animation2 = useAnimation();
+  const animation3 = useAnimation();
+  const animation4 = useAnimation();
+  const animation5 = useAnimation();
+  const animation6 = useAnimation();
 
-  // useEffect(() => {
-  //   if (inView) {
-  //     animation.start({
-  //       opacity: 1,
-  //       transition: {
-  //         y: { type: 'spring', mass: 0.5, damping: 8, stiffness: 200 },
-  //       },
-  //       y: 0,
-  //     });
-  //   }
-  //   if (!inView) {
-  //     animation.start({
-  //       opacity: 0,
-  //       y: 50,
-  //     });
-  //   }
-  //   if (inView2) {
-  //     animation2.start({
-  //       opacity: 1,
-  //       transition: {
-  //         y: { type: 'spring', mass: 0.5, damping: 8, stiffness: 200 },
-  //       },
-  //       y: 0,
-  //     });
-  //   }
-  //   if (!inView2) {
-  //     animation2.start({
-  //       opacity: 0,
-  //       y: 100,
-  //     });
-  //   }
-  // }, [inView, inView2]);
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        scale: 1,
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+        scale: 0,
+      });
+    }
+    if (inView2) {
+      animation2.start({
+        opacity: 1,
+        scale: 1,
+      });
+      animation3.start({
+        opacity: 1,
+        scale: 1,
+        transition: { delay: 0.15 },
+      });
+    }
+    if (!inView2) {
+      animation2.start({
+        opacity: 0,
+        scale: 0,
+      });
+      animation3.start({
+        opacity: 0,
+        scale: 0,
+      });
+    }
+    if (inView3) {
+      animation4.start({
+        opacity: 1,
+        scale: 1,
+      });
+      animation5.start({
+        opacity: 1,
+        scale: 1,
+        transition: { delay: 0.15 },
+      });
+      animation6.start({
+        opacity: 1,
+        scale: 1,
+        transition: { delay: 0.3 },
+      });
+    }
+    if (!inView3) {
+      animation4.start({
+        opacity: 0,
+        scale: 0,
+      });
+      animation5.start({
+        opacity: 0,
+        scale: 0,
+      });
+      animation6.start({
+        opacity: 0,
+        scale: 0,
+      });
+    }
+  }, [inView, inView2, inView3]);
+
+  const svgClassName =
+    'w-[40px] h-[40px] xs:w-[60px] xs:h-[60px] md:w-[84px] md:h-[84px] lg:w-[110px] lg:h-[110px] xl:w-[120px] xl:h-[120px]';
+
+  const textSizeClassName = 'text-xs md:text-sm';
 
   return (
     <section
       id="skills"
-      className="flex flex-col items-center h-[120vh] pt-[12vh] border-4 bg-gray-100 w-full"
+      className="flex flex-col items-center min-h-[120vh] pt-[11vh] bg-gray-100 w-[100vw]"
     >
-      <section className="max-w-[950px]">
-        <h3 className="text-3xl pb-4">Skills</h3>
-        <h2 className="text-8xl font-bold text-start">
+      <section className="max-w-[950px] w-[87%] text-start 2xl:mr-32">
+        <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-4 text-gray-700 font-bold">
+          Skills
+        </h3>
+        <h2
+          className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl 
+          font-bold text-start max-w-[90%]"
+        >
           Everything I use to turn an idea into reality.
         </h2>
       </section>
-      <section className="pt-[8vh] grid gap-5 justify-items-center">
-        <article
-          className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white py-6 px-12
-        w-fit"
+      <section
+        className="pt-[3vh] sm:pt-[5vh] grid gap-2 sm:gap-4 justify-items-start
+      sm:justify-items-center"
+      >
+        <motion.article
+          ref={ref}
+          initial={{ scale: 0 }}
+          animate={animation}
+          className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
+          py-1 px-4 sm:px-5 md:py-2 md:px-6 lg:py-5 lg:px-12"
         >
-          <h4 className="font-bold text-xl py-4">Languages</h4>
-          <div className="flex gap-6">
+          <h4 className="font-bold text-lg sm:text-xl py-4">Languages</h4>
+          <div className="flex gap-2.5 xs:gap-4 sm:gap-6">
             <div className="flex flex-col items-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,8 +124,7 @@ const Skills = () => {
                 role="img"
                 viewBox="0 0 512 512"
                 fill="#000000"
-                height={120}
-                width={120}
+                className={svgClassName}
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -87,7 +140,7 @@ const Skills = () => {
                   ></path>
                 </g>
               </svg>
-              <h5>TypeScript</h5>
+              <h5 className={textSizeClassName}>TypeScript</h5>
             </div>
             <div className="flex flex-col items-center gap-3">
               <svg
@@ -96,8 +149,7 @@ const Skills = () => {
                 role="img"
                 viewBox="0 0 512 512"
                 fill="#000000"
-                height={120}
-                width={120}
+                className={svgClassName}
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -110,17 +162,16 @@ const Skills = () => {
                   <path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"></path>
                 </g>
               </svg>
-              <h5>JavaScript</h5>
+              <h5 className={textSizeClassName}>JavaScript</h5>
             </div>
             <div className="flex flex-col items-center gap-3">
               <svg
-                height={120}
-                width={120}
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="CSS3"
                 role="img"
                 viewBox="0 0 512 512"
                 fill="#000000"
+                className={svgClassName}
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -144,17 +195,16 @@ const Skills = () => {
                   ></path>
                 </g>
               </svg>
-              <h5>CSS</h5>
+              <h5 className={textSizeClassName}>CSS</h5>
             </div>
             <div className="flex flex-col items-center gap-3">
               <svg
-                height={120}
-                width={120}
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="HTML5"
                 role="img"
                 viewBox="0 0 512 512"
                 fill="#000000"
+                className={svgClassName}
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -178,17 +228,16 @@ const Skills = () => {
                   ></path>
                 </g>
               </svg>
-              <h5>HTML</h5>
+              <h5 className={textSizeClassName}>HTML</h5>
             </div>
             <div className="flex flex-col items-center gap-3">
               <svg
-                height={120}
-                width={120}
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="#000000"
+                className={svgClassName}
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -233,21 +282,25 @@ const Skills = () => {
                   ></path>
                 </g>
               </svg>
-              <h5>SQL</h5>
+              <h5 className={textSizeClassName}>SQL</h5>
             </div>
           </div>
-        </article>
-        <div className="flex gap-4">
-          <article
-            className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white pt-5 pb-6 px-12
-            w-fit"
+        </motion.article>
+        <div className="sm:flex gap-4">
+          <motion.article
+            ref={ref2}
+            initial={{ scale: 0 }}
+            animate={animation2}
+            className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white
+            w-fit pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 sm:h-fit"
           >
-            <h4 className="font-bold text-xl py-4">Frameworks</h4>
-            <div className="flex gap-6">
+            <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+              Frameworks
+            </h4>
+            <div className="flex gap-2.5 xs:gap-4  sm:gap-6">
               <div className="flex flex-col items-center gap-3">
                 <svg
-                  height={120}
-                  width={120}
+                  className={svgClassName}
                   viewBox="0 -14 256 256"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -269,13 +322,12 @@ const Skills = () => {
                     </g>
                   </g>
                 </svg>
-                <h5>React</h5>
+                <h5 className={textSizeClassName}>React</h5>
               </div>
               <div className="flex flex-col items-center gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height={120}
-                  width={120}
+                  className={svgClassName}
                   viewBox="0 0 1000 1000"
                   fill="none"
                 >
@@ -292,12 +344,11 @@ const Skills = () => {
                     src="chrome-extension://hejbmebodbijjdhflfknehhcgaklhano/../window/testing-library.js"
                   />
                 </svg>
-                <h5>Tailwind CSS</h5>
+                <h5 className={textSizeClassName}>TailwindCSS</h5>
               </div>
               <div className="flex flex-col items-center gap-3">
                 <svg
-                  height={120}
-                  width={120}
+                  className={svgClassName}
                   fill="#000000"
                   viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg"
@@ -312,22 +363,26 @@ const Skills = () => {
                     <path d="M23.749 30.005c-0.119 0.063-0.109 0.083 0.005 0.025 0.037-0.015 0.068-0.036 0.095-0.061 0-0.021 0-0.021-0.1 0.036zM23.989 29.875c-0.057 0.047-0.057 0.047 0.011 0.016 0.036-0.021 0.068-0.041 0.068-0.047 0-0.027-0.016-0.021-0.079 0.031zM24.145 29.781c-0.057 0.047-0.057 0.047 0.011 0.016 0.037-0.021 0.068-0.043 0.068-0.048 0-0.025-0.016-0.020-0.079 0.032zM24.303 29.688c-0.057 0.047-0.057 0.047 0.009 0.015 0.037-0.020 0.068-0.041 0.068-0.047 0-0.025-0.016-0.020-0.077 0.032zM24.516 29.547c-0.109 0.073-0.147 0.12-0.047 0.068 0.067-0.041 0.181-0.131 0.161-0.131-0.043 0.016-0.079 0.043-0.115 0.063zM14.953 0.011c-0.073 0.005-0.292 0.025-0.484 0.041-4.548 0.412-8.803 2.86-11.5 6.631-1.491 2.067-2.459 4.468-2.824 6.989-0.129 0.88-0.145 1.14-0.145 2.333 0 1.192 0.016 1.448 0.145 2.328 0.871 6.011 5.147 11.057 10.943 12.927 1.043 0.333 2.136 0.563 3.381 0.704 0.484 0.052 2.577 0.052 3.061 0 2.152-0.24 3.969-0.771 5.767-1.688 0.276-0.14 0.328-0.177 0.291-0.208-0.88-1.161-1.744-2.323-2.609-3.495l-2.557-3.453-3.203-4.745c-1.068-1.588-2.14-3.172-3.229-4.744-0.011 0-0.025 2.109-0.031 4.681-0.011 4.505-0.011 4.688-0.068 4.792-0.057 0.125-0.151 0.229-0.276 0.287-0.099 0.047-0.188 0.057-0.661 0.057h-0.541l-0.141-0.088c-0.088-0.057-0.161-0.136-0.208-0.229l-0.068-0.141 0.005-6.271 0.011-6.271 0.099-0.125c0.063-0.077 0.141-0.14 0.229-0.187 0.131-0.063 0.183-0.073 0.724-0.073 0.635 0 0.74 0.025 0.907 0.208 1.296 1.932 2.588 3.869 3.859 5.812 2.079 3.152 4.917 7.453 6.312 9.563l2.537 3.839 0.125-0.083c1.219-0.813 2.328-1.781 3.285-2.885 2.016-2.308 3.324-5.147 3.767-8.177 0.129-0.88 0.145-1.141 0.145-2.333 0-1.193-0.016-1.448-0.145-2.328-0.871-6.011-5.147-11.057-10.943-12.928-1.084-0.343-2.199-0.577-3.328-0.697-0.303-0.031-2.371-0.068-2.631-0.041zM21.5 9.688c0.151 0.072 0.265 0.208 0.317 0.364 0.027 0.084 0.032 1.823 0.027 5.74l-0.011 5.624-0.989-1.52-0.995-1.521v-4.083c0-2.647 0.011-4.131 0.025-4.204 0.047-0.167 0.161-0.307 0.313-0.395 0.124-0.063 0.172-0.068 0.667-0.068 0.463 0 0.541 0.005 0.645 0.063z"></path>
                   </g>
                 </svg>
-                <h5>Next.js</h5>
+                <h5 className={textSizeClassName}>Next.js</h5>
               </div>
             </div>
-          </article>
-          <article
-            className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white pt-5 pb-6 px-12
-           w-fit"
+          </motion.article>
+          <motion.article
+            ref={ref2}
+            initial={{ scale: 0 }}
+            animate={animation3}
+            className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit 
+            pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0"
           >
-            <h4 className="font-bold text-xl py-4">Libraries</h4>
-            <div className="flex gap-6">
+            <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+              Libraries
+            </h4>
+            <div className="flex gap-2.5 xs:gap-4  sm:gap-6">
               <div className="flex flex-col items-center gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="3.7 3.7 43.6 43.6"
-                  height={120}
-                  width={120}
+                  className={svgClassName}
                 >
                   <path
                     d="m47.3 3.7v21.8l-10.9 10.9-10.9 10.9-10.9-10.9 10.9-10.9v.1-.1z"
@@ -343,7 +398,7 @@ const Skills = () => {
                     src="chrome-extension://hejbmebodbijjdhflfknehhcgaklhano/../window/testing-library.js"
                   />
                 </svg>
-                <h5>Framer Motion</h5>
+                <h5 className={textSizeClassName}>Framer Motion</h5>
               </div>
               <div className="flex flex-col items-center gap-3">
                 <svg
@@ -352,8 +407,7 @@ const Skills = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="xMidYMid"
                   fill="#000000"
-                  height={120}
-                  width={120}
+                  className={svgClassName}
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g
@@ -374,7 +428,7 @@ const Skills = () => {
                     </g>
                   </g>
                 </svg>
-                <h5>React Router</h5>
+                <h5 className={textSizeClassName}>React Router</h5>
               </div>
               <div className="flex flex-col items-center gap-3">
                 <svg
@@ -383,8 +437,7 @@ const Skills = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="xMidYMid"
                   fill="#000000"
-                  height={120}
-                  width={120}
+                  className={svgClassName}
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g
@@ -413,24 +466,28 @@ const Skills = () => {
                     </g>
                   </g>
                 </svg>
-                <h5>Material UI</h5>
+                <h5 className={textSizeClassName}>Material UI</h5>
               </div>
             </div>
-          </article>
+          </motion.article>
         </div>
-        <div className="flex gap-4">
-          <article
-            className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white pt-5 pb-6 px-12
-            w-fit"
+        <div className="sm:flex gap-4">
+          <motion.article
+            ref={ref3}
+            initial={{ scale: 0 }}
+            animate={animation4}
+            className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
+            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 sm:h-fit"
           >
-            <h4 className="font-bold text-xl py-4">Collaborative Work</h4>
+            <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+              Collaborative Work
+            </h4>
             <div className="flex gap-6">
               <div className="flex flex-col items-center gap-3">
                 <svg
                   viewBox="0 0 32 32"
                   fill="none"
-                  height={120}
-                  width={120}
+                  className={svgClassName}
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -450,14 +507,13 @@ const Skills = () => {
                     ></path>
                   </g>
                 </svg>
-                <h5>Git</h5>
+                <h5 className={textSizeClassName}>Git</h5>
               </div>
               <div className="flex flex-col items-center gap-3">
                 <svg
                   viewBox="0 0 20 20"
                   version="1.1"
-                  height={120}
-                  width={120}
+                  className={svgClassName}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="#000000"
                 >
@@ -495,93 +551,104 @@ const Skills = () => {
                     </g>
                   </g>
                 </svg>
-                <h5>Github</h5>
+                <h5 className={textSizeClassName}>Github</h5>
               </div>
             </div>
-          </article>
-          <article
-            className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white pt-5 pb-6 px-12
-           w-fit"
-          >
-            <h4 className="font-bold text-xl py-4">Platforms</h4>
-            <div className="flex gap-6">
-              <div className="flex flex-col items-center gap-3">
-                <img
-                  src={firebaseicon}
-                  height={88}
-                  width={88}
-                  alt="icon for Google Firebase"
-                />
-                <h5>Google Firebase</h5>
-              </div>
-              <div className="flex flex-col items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.0"
-                  height={120}
-                  width={120}
-                  viewBox="0 0 512.000000 512.000000"
-                  preserveAspectRatio="xMidYMid meet"
-                >
-                  <metadata>
-                    Created by potrace 1.11, written by Peter Selinger 2001-2013
-                  </metadata>
-                  <g
-                    transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                    fill="#000000"
-                    stroke="none"
-                  >
-                    <path d="M2310 5109 c-502 -55 -974 -249 -1355 -556 -129 -104 -340 -321 -433 -445 -265 -354 -434 -758 -498 -1193 -22 -147 -29 -428 -15 -575 42 -433 180 -833 405 -1174 414 -629 1047 -1032 1791 -1142 147 -22 428 -29 575 -15 433 42 833 180 1174 405 629 414 1032 1047 1142 1791 22 147 29 428 15 575 -51 524 -238 988 -558 1385 -104 129 -321 340 -445 433 -354 265 -755 432 -1193 498 -121 18 -487 26 -605 13z m909 -2348 c347 -607 631 -1105 631 -1107 0 -2 -569 -4 -1265 -4 -696 0 -1265 2 -1265 5 0 8 1263 2216 1266 2212 1 -1 287 -499 633 -1106z" />
-                  </g>
-                  <script
-                    type="text/javascript"
-                    src="chrome-extension://hejbmebodbijjdhflfknehhcgaklhano/../window/testing-library.js"
+          </motion.article>
+          <div className="flex gap-2 xs:gap-3 lg:gap-4">
+            <motion.article
+              ref={ref3}
+              initial={{ scale: 0 }}
+              animate={animation5}
+              className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
+            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 sm:h-fit"
+            >
+              <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+                Platforms
+              </h4>
+              <div className="flex gap-2 xs:gap-4  sm:gap-6">
+                <div className="flex flex-col items-center gap-3 text-center">
+                  <img
+                    src={firebaseicon}
+                    className="w-[40px] h-[40px] xs:w-[60px] xs:h-[60px] 
+                    md:w-[84px] md:h-[84px] lg:w-[110px] lg:h-[110px] xl:w-[120px] xl:h-[120px]"
+                    alt="icon for Google Firebase"
                   />
-                </svg>
-                <h5>Vercel</h5>
+                  <h5 className={textSizeClassName}>Google Firebase</h5>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.0"
+                    className={svgClassName}
+                    viewBox="0 0 512.000000 512.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <metadata>
+                      Created by potrace 1.11, written by Peter Selinger
+                      2001-2013
+                    </metadata>
+                    <g
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                      fill="#000000"
+                      stroke="none"
+                    >
+                      <path d="M2310 5109 c-502 -55 -974 -249 -1355 -556 -129 -104 -340 -321 -433 -445 -265 -354 -434 -758 -498 -1193 -22 -147 -29 -428 -15 -575 42 -433 180 -833 405 -1174 414 -629 1047 -1032 1791 -1142 147 -22 428 -29 575 -15 433 42 833 180 1174 405 629 414 1032 1047 1142 1791 22 147 29 428 15 575 -51 524 -238 988 -558 1385 -104 129 -321 340 -445 433 -354 265 -755 432 -1193 498 -121 18 -487 26 -605 13z m909 -2348 c347 -607 631 -1105 631 -1107 0 -2 -569 -4 -1265 -4 -696 0 -1265 2 -1265 5 0 8 1263 2216 1266 2212 1 -1 287 -499 633 -1106z" />
+                    </g>
+                    <script
+                      type="text/javascript"
+                      src="chrome-extension://hejbmebodbijjdhflfknehhcgaklhano/../window/testing-library.js"
+                    />
+                  </svg>
+                  <h5 className={textSizeClassName}>Vercel</h5>
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white pt-5 pb-6 px-12
-            w-fit"
-          >
-            <h4 className="font-bold text-xl py-4">Code Editor</h4>
-            <div className="flex gap-6">
-              <div className="flex flex-col items-center gap-3">
-                <svg
-                  viewBox="0 0 32 32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
-                  height={120}
-                  width={120}
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title>file_type_vscode</title>
-                    <path
-                      d="M29.01,5.03,23.244,2.254a1.742,1.742,0,0,0-1.989.338L2.38,19.8A1.166,1.166,0,0,0,2.3,21.447c.025.027.05.053.077.077l1.541,1.4a1.165,1.165,0,0,0,1.489.066L28.142,5.75A1.158,1.158,0,0,1,30,6.672V6.605A1.748,1.748,0,0,0,29.01,5.03Z"
-                      style={{ fill: '#0065a9' }}
-                    ></path>
-                    <path
-                      d="M29.01,26.97l-5.766,2.777a1.745,1.745,0,0,1-1.989-.338L2.38,12.2A1.166,1.166,0,0,1,2.3,10.553c.025-.027.05-.053.077-.077l1.541-1.4A1.165,1.165,0,0,1,5.41,9.01L28.142,26.25A1.158,1.158,0,0,0,30,25.328V25.4A1.749,1.749,0,0,1,29.01,26.97Z"
-                      style={{ fill: '#007acc' }}
-                    ></path>
-                    <path
-                      d="M23.244,29.747a1.745,1.745,0,0,1-1.989-.338A1.025,1.025,0,0,0,23,28.684V3.316a1.024,1.024,0,0,0-1.749-.724,1.744,1.744,0,0,1,1.989-.339l5.765,2.772A1.748,1.748,0,0,1,30,6.6V25.4a1.748,1.748,0,0,1-.991,1.576Z"
-                      style={{ fill: '#1f9cf0' }}
-                    ></path>
-                  </g>
-                </svg>
-                <h5>VSCode</h5>
+            </motion.article>
+            <motion.article
+              ref={ref3}
+              initial={{ scale: 0 }}
+              animate={animation6}
+              className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
+            pt-1 pb-3 px-2.5 md:py-2 md:px-9  xs:px-5 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0"
+            >
+              <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+                Code Editor
+              </h4>
+              <div className="flex justify-center">
+                <div className="flex flex-col items-center gap-3">
+                  <svg
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#000000"
+                    className={svgClassName}
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>file_type_vscode</title>
+                      <path
+                        d="M29.01,5.03,23.244,2.254a1.742,1.742,0,0,0-1.989.338L2.38,19.8A1.166,1.166,0,0,0,2.3,21.447c.025.027.05.053.077.077l1.541,1.4a1.165,1.165,0,0,0,1.489.066L28.142,5.75A1.158,1.158,0,0,1,30,6.672V6.605A1.748,1.748,0,0,0,29.01,5.03Z"
+                        style={{ fill: '#0065a9' }}
+                      ></path>
+                      <path
+                        d="M29.01,26.97l-5.766,2.777a1.745,1.745,0,0,1-1.989-.338L2.38,12.2A1.166,1.166,0,0,1,2.3,10.553c.025-.027.05-.053.077-.077l1.541-1.4A1.165,1.165,0,0,1,5.41,9.01L28.142,26.25A1.158,1.158,0,0,0,30,25.328V25.4A1.749,1.749,0,0,1,29.01,26.97Z"
+                        style={{ fill: '#007acc' }}
+                      ></path>
+                      <path
+                        d="M23.244,29.747a1.745,1.745,0,0,1-1.989-.338A1.025,1.025,0,0,0,23,28.684V3.316a1.024,1.024,0,0,0-1.749-.724,1.744,1.744,0,0,1,1.989-.339l5.765,2.772A1.748,1.748,0,0,1,30,6.6V25.4a1.748,1.748,0,0,1-.991,1.576Z"
+                        style={{ fill: '#1f9cf0' }}
+                      ></path>
+                    </g>
+                  </svg>
+                  <h5 className={textSizeClassName}>VSCode</h5>
+                </div>
               </div>
-            </div>
-          </article>
+            </motion.article>
+          </div>
         </div>
       </section>
     </section>

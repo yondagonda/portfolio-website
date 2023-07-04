@@ -1,7 +1,6 @@
 import React from 'react';
 import profilepic from '../assets/profile.JPG';
-import { motion, spring } from 'framer-motion';
-import { stagger } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   const handleNavButtonClick = (sectionId: string) => {
@@ -36,27 +35,31 @@ const Home = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="flex flex-col items-center h-[100vh] pt-[28vh] outline outline-gray-200"
+      className="flex flex-col items-center h-[98vh] pt-[28vh] w-[100vw]"
     >
       <motion.div variants={childVariants}>
         <img
           src={profilepic}
-          className="h-60 w-60 object-cover rounded-full ring-4 ring-blue-600"
+          className="h-44 w-44 xs:h-60 xs:w-60 object-cover rounded-full ring-4 ring-blue-600"
           alt="profile shot"
         />
       </motion.div>
-      <motion.h3 variants={childVariants} className="text-2xl py-4">
+      <motion.h3
+        variants={childVariants}
+        className="text-xl xs:text-2xl py-4 text-gray-700"
+      >
         Johny Ha
       </motion.h3>
       <motion.h1
         variants={childVariants}
-        className="text-6xl font-bold text-center pt-2"
+        className="text-2xl xs:text-4xl sm:text-6xl font-bold text-center pt-2"
       >
         Software Engineer
       </motion.h1>
       <motion.p
         variants={childVariants}
-        className="max-w-[450px] text-center py-6"
+        className="sm:max-w-[450px] max-w-[75vw] text-xs xs:text-base text-center py-6 
+        text-gray-700"
       >
         Passionate about problem solving, I thrive on the thrill of unraveling
         intricate puzzles and persisting until I discover the most effective
@@ -65,8 +68,8 @@ const Home = () => {
 
       <motion.button
         onClick={() => handleNavButtonClick('about')}
-        className="py-3 px-5 border bg-blue-600 text-white font-bold rounded-full flex gap-2
-        items-center group"
+        className="xs:py-3 xs:px-5 border bg-blue-600 text-white font-bold rounded-full flex gap-2
+        items-center group py-2 px-3 text-sm xs:text-base"
         variants={childVariants}
       >
         <svg

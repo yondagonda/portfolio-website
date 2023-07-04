@@ -23,9 +23,15 @@ const Description = () => {
   }, [inView]);
 
   return (
-    <section className="flex flex-col justify-center h-[60vh] max-w-[1200px] outline outline-gray-200">
+    <section
+      className="flex flex-col justify-center h-[60vh] max-w-[85%] xl:max-w-[1200px]
+    overflow-x-hidden"
+    >
       <motion.div ref={ref} initial={{ opacity: 0 }} animate={animation}>
-        <h2 className="text-6xl font-bold text-center gradient py-3">
+        <h2
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center gradient 
+        py-3"
+        >
           Continuously learning and exploring new technologies to enhance my
           skills and stay ahead in a rapidly evolving industry
         </h2>

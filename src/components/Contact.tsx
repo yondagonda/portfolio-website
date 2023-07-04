@@ -92,14 +92,14 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center h-[75vh] pt-[12vh] border-4 bg-gray-100 w-full"
+      className="flex flex-col items-center h-[75vh] pt-[12vh] border-4 bg-gray-100 w-[100vw]"
     >
       <section className="max-w-[800px]">
         <motion.h3
           ref={ref}
           initial={{ y: 50, opacity: 0 }}
           animate={animation}
-          className="text-3xl pb-4 text-center"
+          className="text-3xl pb-4 text-center text-gray-700 font-bold"
         >
           Contact
         </motion.h3>
