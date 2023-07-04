@@ -663,9 +663,7 @@ const Resume = () => {
                     </g>
                   </g>
                 </svg>
-                <h4 className="text-xl text-white font-bold text-blue-500">
-                  Contact me
-                </h4>
+                <h4 className="text-xl font-bold text-blue-500">Contact me</h4>
               </button>
             </div>
           </div>
