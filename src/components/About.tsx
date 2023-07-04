@@ -117,6 +117,7 @@ const About = () => {
 
   return (
     <section
+      id="about"
       className="flex flex-col h-[115vh] items-center outline outline-gray-200 pt-[13vh] 
     bg-gray-100 w-screen "
     >

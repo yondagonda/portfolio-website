@@ -45,7 +45,10 @@ const Resume = () => {
   }, [inView, inView2]);
 
   return (
-    <section className="flex flex-col items-center h-[100vh] pt-[14vh] border-4">
+    <section
+      id="resume"
+      className="flex flex-col items-center h-[100vh] pt-[14vh] border-4"
+    >
       <section className="max-w-[950px] text-center">
         <motion.h3
           ref={ref}

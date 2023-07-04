@@ -90,7 +90,10 @@ const Contact = () => {
   }, [inView3, inView4]);
 
   return (
-    <section className="flex flex-col items-center h-[75vh] pt-[12vh] border-4 bg-gray-100 w-full">
+    <section
+      id="contact"
+      className="flex flex-col items-center h-[75vh] pt-[12vh] border-4 bg-gray-100 w-full"
+    >
       <section className="max-w-[800px]">
         <motion.h3
           ref={ref}

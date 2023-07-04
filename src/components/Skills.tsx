@@ -46,7 +46,10 @@ const Skills = () => {
   // }, [inView, inView2]);
 
   return (
-    <section className="flex flex-col items-center h-[120vh] pt-[12vh] border-4 bg-gray-100 w-full">
+    <section
+      id="skills"
+      className="flex flex-col items-center h-[120vh] pt-[12vh] border-4 bg-gray-100 w-full"
+    >
       <section className="max-w-[950px]">
         <h3 className="text-3xl pb-4">Skills</h3>
         <h2 className="text-8xl font-bold text-start">

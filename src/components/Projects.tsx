@@ -45,7 +45,10 @@ const Projects = () => {
   }, [inView, inView2]);
 
   return (
-    <section className="flex flex-col items-center h-[100vh] pt-[12vh] border-4">
+    <section
+      id="portfolio"
+      className="flex flex-col items-center h-[100vh] pt-[12vh] border-4"
+    >
       <section className="max-w-[950px]">
         <motion.h3
           ref={ref}

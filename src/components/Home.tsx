@@ -4,6 +4,11 @@ import { motion, spring } from 'framer-motion';
 import { stagger } from 'framer-motion';
 
 const Home = () => {
+  const handleNavButtonClick = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    section?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const containerVariants = {
     visible: {
       transition: {
@@ -26,7 +31,8 @@ const Home = () => {
   };
 
   return (
-    <motion.header
+    <motion.section
+      id="start"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -58,12 +64,37 @@ const Home = () => {
       </motion.p>
 
       <motion.button
-        className="py-3 px-5 border bg-blue-600 text-white font-bold rounded-full"
+        onClick={() => handleNavButtonClick('about')}
+        className="py-3 px-5 border bg-blue-600 text-white font-bold rounded-full flex gap-2
+        items-center group"
         variants={childVariants}
       >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#ffffff"
+          height={20}
+          width={20}
+          className="group-hover:translate-y-[2px] duration-300 fill-white"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 3C12.5523 3 13 3.44772 13 4V17.5858L18.2929 12.2929C18.6834 11.9024 19.3166 11.9024 19.7071 12.2929C20.0976 12.6834 20.0976 13.3166 19.7071 13.7071L12.7071 20.7071C12.3166 21.0976 11.6834 21.0976 11.2929 20.7071L4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929C4.68342 11.9024 5.31658 11.9024 5.70711 12.2929L11 17.5858V4C11 3.44772 11.4477 3 12 3Z"
+            ></path>
+          </g>
+        </svg>
         Find out more
       </motion.button>
-    </motion.header>
+    </motion.section>
   );
 };
 
