@@ -4,6 +4,8 @@ import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import project1 from '../assets/project1.JPG';
+import project2 from '../assets/project2.JPG';
+import project3 from '../assets/project3.jpg';
 
 const Projects = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
@@ -87,7 +89,7 @@ const Projects = () => {
           </motion.div>
           <img
             src={project1}
-            className="rounded-xl outline
+            className="rounded-xl outline outline-[0.5px]
             shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
             alt="twitter clone homepage"
           />
@@ -105,8 +107,8 @@ const Projects = () => {
             E-Commerce Game Store
           </motion.div>
           <img
-            src={project1}
-            className="rounded-xl outline
+            src={project2}
+            className="rounded-xl outline outline-[0.5px]
             shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
             alt="twitter clone homepage"
           />
@@ -118,8 +120,8 @@ const Projects = () => {
           className="rounded-xl group flex flex-col items-center text-sm mt-12 lg:mt-0"
         >
           <img
-            src={project1}
-            className="rounded-xl outline
+            src={project3}
+            className="rounded-xl outline outline-[0.5px]
             shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
             alt="twitter clone homepage"
           />
@@ -138,7 +140,7 @@ const Projects = () => {
         >
           <img
             src={project1}
-            className="rounded-xl outline
+            className="rounded-xl outline outline-[0.5px]
             shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
             alt="twitter clone homepage"
           />

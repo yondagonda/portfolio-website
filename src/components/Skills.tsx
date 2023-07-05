@@ -113,7 +113,7 @@ const Skills = () => {
           initial={{ scale: 0 }}
           animate={animation}
           className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
-          py-1 px-4 sm:px-5 md:py-2 md:px-6 lg:py-5 lg:px-12"
+          py-1 pb-2.5 px-4 sm:px-5 md:py-2 md:px-6 lg:py-5 lg:px-12"
         >
           <h4 className="font-bold text-lg sm:text-xl py-4">Languages</h4>
           <div className="flex gap-2.5 xs:gap-4 sm:gap-6">

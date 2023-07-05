@@ -199,9 +199,11 @@ const About = () => {
               sm:px-8 sm:py-6 px-4 py-4 max-w-[85%] margininlineauto h-fit mt-2 sm:mt-0
               sm:max-w-[580px] lg:py-8"
             >
-              <div className="flex items-baseline gap-1.5">
-                <h4 className="font-bold sm:text-xl">Performance Focused</h4>
-                <span className="text-xs sm:text-sm text-gray-800">
+              <div className="flex items-center gap-1.5 sm:items-baseline">
+                <h4 className="font-bold sm:text-xl whitespace-nowrap">
+                  Performance Focused
+                </h4>
+                <span className="text-[11px] leading-3 sm:text-sm text-gray-800">
                   via Google Lighthouse
                 </span>
               </div>

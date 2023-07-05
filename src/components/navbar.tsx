@@ -19,15 +19,15 @@ const Navbar = () => {
         },
         opacity: 1,
       }}
-      className="flex fixed justify-center flex gap-2.5 xs:gap-4 sm:px-2
-       sm:gap-6 sm:px-4 md:gap-8 rounded-full top-6 
+      className="flex fixed justify-center flex gap-3 xs:gap-4 sm:px-1.5
+       sm:gap-6 md:gap-8 rounded-full top-6 
       backdrop-blur-[10px] z-[100] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#ffffff] 
-      items-center py-1 px-2 sm:py-1.5"
+      items-center py-1 px-1.5 sm:py-1.5"
     >
       <button
         onClick={() => handleNavButtonClick('start')}
         className="bg-blue-600 text-white font-bold py-0.5 xs:px-3.5 rounded-full xs:text-[18px]
-        hover:bg-blue-700 duration-150 text-[15px] px-2.5 xs:py-1"
+        hover:bg-blue-700 duration-150 text-[14px] px-2.5 xs:py-1"
       >
         J
       </button>
@@ -62,7 +62,7 @@ const Navbar = () => {
       <button
         onClick={() => handleNavButtonClick('contact')}
         className="bg-blue-600 text-white font-bold xs:px-5 rounded-3xl
-        hover:bg-blue-700 duration-150 text-[13px] xs:text-sm sm:text-base px-1.5 py-1"
+        hover:bg-blue-700 duration-150 text-[13px] xs:text-sm sm:text-base px-1.5 py-1.5"
       >
         Contact
       </button>

@@ -70,7 +70,7 @@ const Form = () => {
               },
             }}
             className="fixed top-0 left-0 mt-4 ml-4 rounded-3xl flex gap-2 
-      shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-2 px-4 z-[10] bg-blue-600 text-white font-bold"
+      shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-2 px-4 z-[100] bg-blue-600 text-white font-bold"
           >
             <svg
               viewBox="0 0 1024 1024"

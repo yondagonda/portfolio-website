@@ -1,5 +1,5 @@
 import React from 'react';
-import profilepic from '../assets/profile.JPG';
+import profilepic from '../assets/profile.jpg';
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -40,7 +40,8 @@ const Home = () => {
       <motion.div variants={childVariants}>
         <img
           src={profilepic}
-          className="h-44 w-44 xs:h-60 xs:w-60 object-cover rounded-full ring-4 ring-blue-600"
+          className="h-44 w-44 xs:h-60 xs:w-60 object-cover rounded-full
+          shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
           alt="profile shot"
         />
       </motion.div>
@@ -52,7 +53,7 @@ const Home = () => {
       </motion.h3>
       <motion.h1
         variants={childVariants}
-        className="text-2xl xs:text-4xl sm:text-6xl font-bold text-center pt-2"
+        className="text-3xl xs:text-4xl sm:text-6xl font-bold text-center pt-2"
       >
         Software Engineer
       </motion.h1>
@@ -69,7 +70,7 @@ const Home = () => {
       <motion.button
         onClick={() => handleNavButtonClick('about')}
         className="xs:py-3 xs:px-5 border bg-blue-600 text-white font-bold rounded-full flex gap-2
-        items-center group py-2 px-3 text-sm xs:text-base"
+        items-center group py-2 px-3 text-sm xs:text-base shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
         variants={childVariants}
       >
         <svg
@@ -79,7 +80,7 @@ const Home = () => {
           stroke="#ffffff"
           height={20}
           width={20}
-          className="group-hover:translate-y-[2px] duration-300 fill-white"
+          className="group-hover:translate-y-[3px] duration-200 fill-white"
         >
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g

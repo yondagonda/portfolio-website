@@ -580,7 +580,7 @@ const Resume = () => {
             <div className="flex flex-col gap-2 items-center">
               <button
                 className="flex items-center gap-2 px-6 py-2 bg-blue-500 rounded-3xl w-fit
-              group"
+              group shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -636,12 +636,12 @@ const Resume = () => {
                     </g>
                   </g>
                 </svg>
-                <h4 className="text-xl text-white font-bold">Download CV</h4>
+                <h4 className="text-xl text-white">Download CV</h4>
               </button>
               <button
                 onClick={() => handleNavButtonClick('contact')}
                 className="flex items-center gap-2 px-6 py-2 bg-white rounded-3xl w-fit
-                hover:bg-gray-200 duration-200"
+                hover:bg-gray-200 duration-200 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
               >
                 <svg
                   viewBox="0 0 20 20"
@@ -686,7 +686,7 @@ const Resume = () => {
                     </g>
                   </g>
                 </svg>
-                <h4 className="text-xl font-bold text-blue-500">Contact me</h4>
+                <h4 className="text-xl text-blue-500">Contact me</h4>
               </button>
             </div>
           </div>

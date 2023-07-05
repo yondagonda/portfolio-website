@@ -92,7 +92,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center min-h-[75vh] pt-[12vh] border-4 bg-gray-100 w-[100vw]"
+      className="flex flex-col items-center min-h-[75vh] pt-[12vh] bg-gray-100 w-[100vw]"
     >
       <section className="max-w-[800px]">
         <motion.h3

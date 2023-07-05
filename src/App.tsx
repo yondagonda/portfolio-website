@@ -14,16 +14,14 @@ function App() {
 
   //TODO:
   // setup dark mode functionality
+  // display all project images (will require refactoring of projects)
+  // create readME for CV builder
   // setup little monitor preview ting
   // download CV button
 
-  //mobile problems:
-  // nav bar needs to be bigger
-  // horizontal scrolling issue
-
   return (
-    <div className="App flex justify-center">
-      <div className="flex flex-col relative items-center max-w-[screen]">
+    <div className="App flex justify-center overflow-x-hidden">
+      <div className="flex flex-col relative items-center max-w-[screen] overflow-x-hidden">
         <Navbar />
         <Home />
         <Description />
