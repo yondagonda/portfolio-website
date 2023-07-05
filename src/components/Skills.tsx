@@ -91,15 +91,18 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center min-h-[120vh] pt-[11vh] bg-gray-100 w-[100vw]"
+      className="flex flex-col items-center min-h-[120vh] pt-[11vh] bg-gray-100 w-[100vw] dark:bg-black duration-200"
     >
       <section className="max-w-[950px] w-[87%] text-start 2xl:mr-32">
-        <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-4 text-gray-700 font-bold">
+        <h3
+          className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-4 text-gray-700 font-bold
+        dark:text-gray-300 duration-200"
+        >
           Skills
         </h3>
         <h2
           className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl 
-          font-bold text-start max-w-[90%]"
+          font-bold text-start max-w-[90%] dark:text-white duration-200"
         >
           Everything I use to turn an idea into reality.
         </h2>
@@ -113,11 +116,14 @@ const Skills = () => {
           initial={{ scale: 0 }}
           animate={animation}
           className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
-          py-1 pb-2.5 px-4 sm:px-5 md:py-2 md:px-6 lg:py-5 lg:px-12"
+          py-1 pb-2.5 px-4 sm:px-5 md:py-2 md:px-6 lg:py-5 lg:px-12 dark:bg-[#1d1d1f] duration-200
+          dark:outline-gray-900"
         >
-          <h4 className="font-bold text-lg sm:text-xl py-4">Languages</h4>
+          <h4 className="font-bold text-lg sm:text-xl py-4 dark:text-white duration-200">
+            Languages
+          </h4>
           <div className="flex gap-2.5 xs:gap-4 sm:gap-6">
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="TypeScript"
@@ -126,11 +132,11 @@ const Skills = () => {
                 fill="#000000"
                 className={svgClassName}
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   <rect width="512" height="512" rx="15%" fill="#3178c6"></rect>
@@ -142,7 +148,7 @@ const Skills = () => {
               </svg>
               <h5 className={textSizeClassName}>TypeScript</h5>
             </div>
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="JavaScript"
@@ -151,11 +157,11 @@ const Skills = () => {
                 fill="#000000"
                 className={svgClassName}
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   <rect width="512" height="512" rx="15%" fill="#f7df1e"></rect>
@@ -164,7 +170,7 @@ const Skills = () => {
               </svg>
               <h5 className={textSizeClassName}>JavaScript</h5>
             </div>
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="CSS3"
@@ -173,11 +179,11 @@ const Skills = () => {
                 fill="#000000"
                 className={svgClassName}
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   <path
@@ -197,7 +203,7 @@ const Skills = () => {
               </svg>
               <h5 className={textSizeClassName}>CSS</h5>
             </div>
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="HTML5"
@@ -206,11 +212,11 @@ const Skills = () => {
                 fill="#000000"
                 className={svgClassName}
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   <path
@@ -230,7 +236,7 @@ const Skills = () => {
               </svg>
               <h5 className={textSizeClassName}>HTML</h5>
             </div>
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
               <svg
                 version="1.1"
                 id="Layer_1"
@@ -239,11 +245,11 @@ const Skills = () => {
                 fill="#000000"
                 className={svgClassName}
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   <path
@@ -292,13 +298,14 @@ const Skills = () => {
             initial={{ scale: 0 }}
             animate={animation2}
             className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white
-            w-fit pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 sm:h-fit"
+            w-fit pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 sm:h-fit dark:bg-[#1d1d1f] duration-200
+            dark:outline-gray-900"
           >
-            <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+            <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
               Frameworks
             </h4>
             <div className="flex gap-2.5 xs:gap-4  sm:gap-6">
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                 <svg
                   className={svgClassName}
                   viewBox="0 -14 256 256"
@@ -307,11 +314,11 @@ const Skills = () => {
                   preserveAspectRatio="xMidYMid"
                   fill="#000000"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <g>
@@ -324,7 +331,7 @@ const Skills = () => {
                 </svg>
                 <h5 className={textSizeClassName}>React</h5>
               </div>
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={svgClassName}
@@ -346,18 +353,17 @@ const Skills = () => {
                 </svg>
                 <h5 className={textSizeClassName}>TailwindCSS</h5>
               </div>
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                 <svg
-                  className={svgClassName}
-                  fill="#000000"
+                  className={`${svgClassName} dark:fill-white`}
                   viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <path d="M23.749 30.005c-0.119 0.063-0.109 0.083 0.005 0.025 0.037-0.015 0.068-0.036 0.095-0.061 0-0.021 0-0.021-0.1 0.036zM23.989 29.875c-0.057 0.047-0.057 0.047 0.011 0.016 0.036-0.021 0.068-0.041 0.068-0.047 0-0.027-0.016-0.021-0.079 0.031zM24.145 29.781c-0.057 0.047-0.057 0.047 0.011 0.016 0.037-0.021 0.068-0.043 0.068-0.048 0-0.025-0.016-0.020-0.079 0.032zM24.303 29.688c-0.057 0.047-0.057 0.047 0.009 0.015 0.037-0.020 0.068-0.041 0.068-0.047 0-0.025-0.016-0.020-0.077 0.032zM24.516 29.547c-0.109 0.073-0.147 0.12-0.047 0.068 0.067-0.041 0.181-0.131 0.161-0.131-0.043 0.016-0.079 0.043-0.115 0.063zM14.953 0.011c-0.073 0.005-0.292 0.025-0.484 0.041-4.548 0.412-8.803 2.86-11.5 6.631-1.491 2.067-2.459 4.468-2.824 6.989-0.129 0.88-0.145 1.14-0.145 2.333 0 1.192 0.016 1.448 0.145 2.328 0.871 6.011 5.147 11.057 10.943 12.927 1.043 0.333 2.136 0.563 3.381 0.704 0.484 0.052 2.577 0.052 3.061 0 2.152-0.24 3.969-0.771 5.767-1.688 0.276-0.14 0.328-0.177 0.291-0.208-0.88-1.161-1.744-2.323-2.609-3.495l-2.557-3.453-3.203-4.745c-1.068-1.588-2.14-3.172-3.229-4.744-0.011 0-0.025 2.109-0.031 4.681-0.011 4.505-0.011 4.688-0.068 4.792-0.057 0.125-0.151 0.229-0.276 0.287-0.099 0.047-0.188 0.057-0.661 0.057h-0.541l-0.141-0.088c-0.088-0.057-0.161-0.136-0.208-0.229l-0.068-0.141 0.005-6.271 0.011-6.271 0.099-0.125c0.063-0.077 0.141-0.14 0.229-0.187 0.131-0.063 0.183-0.073 0.724-0.073 0.635 0 0.74 0.025 0.907 0.208 1.296 1.932 2.588 3.869 3.859 5.812 2.079 3.152 4.917 7.453 6.312 9.563l2.537 3.839 0.125-0.083c1.219-0.813 2.328-1.781 3.285-2.885 2.016-2.308 3.324-5.147 3.767-8.177 0.129-0.88 0.145-1.141 0.145-2.333 0-1.193-0.016-1.448-0.145-2.328-0.871-6.011-5.147-11.057-10.943-12.928-1.084-0.343-2.199-0.577-3.328-0.697-0.303-0.031-2.371-0.068-2.631-0.041zM21.5 9.688c0.151 0.072 0.265 0.208 0.317 0.364 0.027 0.084 0.032 1.823 0.027 5.74l-0.011 5.624-0.989-1.52-0.995-1.521v-4.083c0-2.647 0.011-4.131 0.025-4.204 0.047-0.167 0.161-0.307 0.313-0.395 0.124-0.063 0.172-0.068 0.667-0.068 0.463 0 0.541 0.005 0.645 0.063z"></path>
@@ -372,13 +378,14 @@ const Skills = () => {
             initial={{ scale: 0 }}
             animate={animation3}
             className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit 
-            pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0"
+            pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 dark:bg-[#1d1d1f] duration-200
+            dark:outline-gray-900"
           >
-            <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+            <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
               Libraries
             </h4>
             <div className="flex gap-2.5 xs:gap-4  sm:gap-6">
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="3.7 3.7 43.6 43.6"
@@ -400,7 +407,7 @@ const Skills = () => {
                 </svg>
                 <h5 className={textSizeClassName}>Framer Motion</h5>
               </div>
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                 <svg
                   viewBox="0 -58 256 256"
                   version="1.1"
@@ -409,11 +416,11 @@ const Skills = () => {
                   fill="#000000"
                   className={svgClassName}
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <g>
@@ -430,7 +437,7 @@ const Skills = () => {
                 </svg>
                 <h5 className={textSizeClassName}>React Router</h5>
               </div>
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                 <svg
                   viewBox="0 -26 256 256"
                   version="1.1"
@@ -439,11 +446,11 @@ const Skills = () => {
                   fill="#000000"
                   className={svgClassName}
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <g>
@@ -477,13 +484,14 @@ const Skills = () => {
             initial={{ scale: 0 }}
             animate={animation4}
             className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
-            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 sm:h-fit"
+            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 sm:h-fit dark:bg-[#1d1d1f] duration-200
+            dark:outline-gray-900"
           >
-            <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+            <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
               Collaborative Work
             </h4>
             <div className="flex gap-6">
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                 <svg
                   viewBox="0 0 32 32"
                   fill="none"
@@ -493,8 +501,8 @@ const Skills = () => {
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <path
@@ -509,19 +517,18 @@ const Skills = () => {
                 </svg>
                 <h5 className={textSizeClassName}>Git</h5>
               </div>
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                 <svg
                   viewBox="0 0 20 20"
                   version="1.1"
-                  className={svgClassName}
+                  className={`${svgClassName} fill-black dark:fill-white`}
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <title>github [#142]</title>
@@ -529,14 +536,12 @@ const Skills = () => {
                     <g
                       id="Page-1"
                       stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
+                      strokeWidth="1"
+                      fillRule="evenodd"
                     >
                       <g
                         id="Dribbble-Light-Preview"
                         transform="translate(-140.000000, -7559.000000)"
-                        fill="#000000"
                       >
                         <g
                           id="icons"
@@ -561,13 +566,14 @@ const Skills = () => {
               initial={{ scale: 0 }}
               animate={animation5}
               className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
-            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 sm:h-fit"
+            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 sm:h-fit dark:bg-[#1d1d1f] duration-200
+            dark:outline-gray-900"
             >
-              <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+              <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
                 Platforms
               </h4>
               <div className="flex gap-2 xs:gap-4  sm:gap-6">
-                <div className="flex flex-col items-center gap-3 text-center">
+                <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200 text-center">
                   <img
                     src={firebaseicon}
                     className="w-[40px] h-[40px] xs:w-[60px] xs:h-[60px] 
@@ -576,11 +582,11 @@ const Skills = () => {
                   />
                   <h5 className={textSizeClassName}>Google Firebase</h5>
                 </div>
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.0"
-                    className={svgClassName}
+                    className={`${svgClassName} fill-black dark:fill-white`}
                     viewBox="0 0 512.000000 512.000000"
                     preserveAspectRatio="xMidYMid meet"
                   >
@@ -590,7 +596,6 @@ const Skills = () => {
                     </metadata>
                     <g
                       transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                      fill="#000000"
                       stroke="none"
                     >
                       <path d="M2310 5109 c-502 -55 -974 -249 -1355 -556 -129 -104 -340 -321 -433 -445 -265 -354 -434 -758 -498 -1193 -22 -147 -29 -428 -15 -575 42 -433 180 -833 405 -1174 414 -629 1047 -1032 1791 -1142 147 -22 428 -29 575 -15 433 42 833 180 1174 405 629 414 1032 1047 1142 1791 22 147 29 428 15 575 -51 524 -238 988 -558 1385 -104 129 -321 340 -445 433 -354 265 -755 432 -1193 498 -121 18 -487 26 -605 13z m909 -2348 c347 -607 631 -1105 631 -1107 0 -2 -569 -4 -1265 -4 -696 0 -1265 2 -1265 5 0 8 1263 2216 1266 2212 1 -1 287 -499 633 -1106z" />
@@ -609,24 +614,25 @@ const Skills = () => {
               initial={{ scale: 0 }}
               animate={animation6}
               className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
-            pt-1 pb-3 px-2.5 md:py-2 md:px-9  xs:px-5 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0"
+            pt-1 pb-3 px-2.5 md:py-2 md:px-9  xs:px-5 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 dark:bg-[#1d1d1f] duration-200
+            dark:outline-gray-900"
             >
-              <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4">
+              <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
                 Code Editor
               </h4>
               <div className="flex justify-center">
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 dark:text-gray-300 duration-200">
                   <svg
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#000000"
                     className={svgClassName}
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       <title>file_type_vscode</title>

@@ -119,7 +119,7 @@ const About = () => {
     <section
       id="about"
       className="flex flex-col min-h-[105vh] items-center pt-[12vh] 
-    bg-gray-100 w-[100vw]"
+    bg-gray-100 w-[100vw] dark:bg-black duration-200"
     >
       <div className="flex flex-col items-center xl:items-start">
         <section className="flex flex-col items-start w-[85%] max-w-[850px] xl:pl-[10vw] 2xl:pl-8">
@@ -127,7 +127,8 @@ const About = () => {
             ref={ref}
             initial={{ y: 50, opacity: 0 }}
             animate={animation}
-            className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-4 text-gray-700 font-bold"
+            className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-4 text-gray-700 font-bold 
+            dark:text-gray-300 duration-200"
           >
             About Me
           </motion.h3>
@@ -136,7 +137,7 @@ const About = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={animation2}
             className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl 
-            font-bold text-start max-w-[90%]"
+            font-bold text-start max-w-[90%] dark:text-white duration-200"
           >
             My tech stack and expertise.
           </motion.h2>
@@ -149,13 +150,14 @@ const About = () => {
           <article
             className="bg-white rounded-2xl outline-[1px] outline outline-gray-200 
             text-xl py-6 px-5 sm:px-8 md:px-10 md:py-10 max-w-[85%] sm:max-w-[580px]
-            margininlineauto mb-3 md:mb-5 lg:mb-0 md:max-w-[80%] lg:max-w-full"
+            margininlineauto mb-3 md:mb-5 lg:mb-0 md:max-w-[80%] lg:max-w-full dark:bg-[#1d1d1f] duration-200
+            dark:outline-gray-900"
           >
-            <h4 className="font-bold text-lg sm:text-2xl">
+            <h4 className="font-bold text-lg sm:text-2xl dark:text-white duration-200">
               Problem solver and tech enthusiast at heart
             </h4>
-            <div className="text-gray-800">
-              <p className="py-5 text-sm sm:text-lg 2xl:text-xl">
+            <div className="text-gray-900 dark:text-gray-300 duration-200">
+              <p className="py-5 text-sm sm:text-lg 2xl:text-xl ">
                 <em>
                   Growing up, I found myself having a strong inclination towards
                   all things related to technology. From Jailbreaking my friends
@@ -182,11 +184,13 @@ const About = () => {
               animate={animation3}
               className="bg-white rounded-2xl outline-[1px] outline outline-gray-200 
               sm:px-8 sm:py-6 px-4 py-4 max-w-[85%] sm:max-w-[580px] margininlineauto h-fit
-              lg:py-8"
+              lg:py-8 dark:bg-[#1d1d1f] dark:outline-gray-900  duration-200 "
             >
-              <h4 className="font-bold sm:text-xl">Attention to Detail</h4>
+              <h4 className="font-bold sm:text-xl dark:text-white duration-200">
+                Attention to Detail
+              </h4>
               <img
-                className="pt-2"
+                className="pt-2 rounded-3xl"
                 src={detail}
                 alt="developer tools being used on a html element"
               />
@@ -197,18 +201,18 @@ const About = () => {
               animate={animation4}
               className="bg-white rounded-2xl outline-[1px] outline outline-gray-200 
               sm:px-8 sm:py-6 px-4 py-4 max-w-[85%] margininlineauto h-fit mt-2 sm:mt-0
-              sm:max-w-[580px] lg:py-8"
+              sm:max-w-[580px] lg:py-8 dark:bg-[#1d1d1f] dark:outline-gray-900  duration-200"
             >
               <div className="flex items-center gap-1.5 sm:items-baseline">
-                <h4 className="font-bold sm:text-xl whitespace-nowrap">
+                <h4 className="font-bold sm:text-xl whitespace-nowrap dark:text-white duration-200">
                   Performance Focused
                 </h4>
-                <span className="text-[11px] leading-3 sm:text-sm text-gray-800">
+                <span className="text-[11px] leading-3 sm:text-sm text-gray-900">
                   via Google Lighthouse
                 </span>
               </div>
               <img
-                className="pt-2"
+                className="pt-2 rounded-3xl"
                 src={lighthouse}
                 alt="Google lighthouse results of this site"
               />

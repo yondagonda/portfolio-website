@@ -92,7 +92,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center min-h-[75vh] pt-[12vh] bg-gray-100 w-[100vw]"
+      className="flex flex-col items-center min-h-[75vh] pt-[12vh] bg-gray-100 w-[100vw] dark:bg-black duration-200"
     >
       <section className="max-w-[800px]">
         <motion.h3
@@ -100,7 +100,7 @@ const Contact = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={animation}
           className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-2 text-gray-700 font-bold 
-          text-center"
+          text-center dark:text-gray-300 duration-200"
         >
           Contact
         </motion.h3>
@@ -109,13 +109,16 @@ const Contact = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={animation2}
           className="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl 
-          font-bold max-w-[90%] py-2 margininlineauto"
+          font-bold max-w-[90%] py-2 margininlineauto dark:text-white duration-200"
         >
           Reach out to me any way you want.
         </motion.h2>
       </section>
 
-      <div className=" py-4 xs:py-8 sm:py-12 text-xs xs:text-sm sm:text-base text-center max-w-[85%]">
+      <div
+        className=" py-4 xs:py-8 sm:py-12 text-xs xs:text-sm sm:text-base text-center max-w-[85%]
+      dark:text-gray-300 duration-200"
+      >
         <p>
           Fill in the form on the left with your details and I will get back to
           you as soon as I can.
@@ -134,7 +137,7 @@ const Contact = () => {
           ref={ref4}
           initial={{ x: -200, opacity: 0 }}
           animate={animation4}
-          className="w-full sm:w-fit"
+          className="w-full sm:w-fit "
         >
           <Form />
         </motion.div>
@@ -144,12 +147,12 @@ const Contact = () => {
           animate={animation3}
           className="p-4 bg-white rounded-3xl outline outline-1 outline-gray-300 
         shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col gap-2 h-fit max-w-[310px]
-         lg:w-full min-w-[250px] sm:min-w-[200px]"
+         lg:w-full min-w-[250px] sm:min-w-[200px] dark:bg-[#1d1d1f] duration-200 dark:outline-gray-900"
         >
           <a
             href="https://www.linkedin.com/in/johny-ha-63a596189/"
             target="_blank"
-            className="flex py-3 px-8 rounded-2xl gap-4 bg-gray-200 cursor-pointer"
+            className="flex py-3 px-8 rounded-2xl gap-4 bg-gray-200 cursor-pointer hover:bg-gray-300 duration-200"
             rel="noreferrer"
           >
             <svg
@@ -160,11 +163,11 @@ const Contact = () => {
               height={21}
               width={21}
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <title>linkedin [#161]</title> <desc>Created with Sketch.</desc>
@@ -172,9 +175,9 @@ const Contact = () => {
                 <g
                   id="Page-1"
                   stroke="none"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fill="none"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 >
                   <g
                     id="Dribbble-Light-Preview"
@@ -196,7 +199,7 @@ const Contact = () => {
           <a
             href="https://github.com/yondagonda"
             target="_blank"
-            className="flex py-3 px-8 rounded-2xl gap-4 bg-gray-200 cursor-pointer"
+            className="flex py-3 px-8 rounded-2xl gap-4 bg-gray-200 cursor-pointer hover:bg-gray-300 duration-200"
             rel="noreferrer"
           >
             <svg
@@ -207,11 +210,11 @@ const Contact = () => {
               height={23}
               width={23}
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <title>github [#142]</title> <desc>Created with Sketch.</desc>
@@ -219,9 +222,9 @@ const Contact = () => {
                 <g
                   id="Page-1"
                   stroke="none"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fill="none"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 >
                   <g
                     id="Dribbble-Light-Preview"
@@ -242,7 +245,7 @@ const Contact = () => {
           </a>
           <a
             href="mailto:yonniedooo@gmail.com"
-            className="flex py-3 px-8 rounded-2xl gap-4 bg-gray-200 cursor-pointer items-center"
+            className="flex py-3 px-8 rounded-2xl gap-4 bg-gray-200 cursor-pointer items-center hover:bg-gray-300 duration-200"
             rel="noreferrer"
           >
             <svg
@@ -252,16 +255,16 @@ const Contact = () => {
               height={21}
               width={21}
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <path
                   d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 ></path>
               </g>
             </svg>

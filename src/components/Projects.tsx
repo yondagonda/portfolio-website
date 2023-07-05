@@ -50,14 +50,15 @@ const Projects = () => {
   return (
     <section
       id="portfolio"
-      className="flex flex-col items-center min-h-[110vh] pt-[11vh] w-[100vw]"
+      className="flex flex-col items-center min-h-[110vh] pt-[11vh] w-[100vw]  dark:bg-[#1d1d1f] duration-200"
     >
       <section className="w-[85%] max-w-[850px] text-start 2xl:mr-32">
         <motion.h3
           ref={ref}
           initial={{ y: 50, opacity: 0 }}
           animate={animation}
-          className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-4 text-gray-700 font-bold"
+          className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-4 text-gray-700 font-bold
+          dark:text-gray-300 duration-200"
         >
           Projects
         </motion.h3>
@@ -66,7 +67,7 @@ const Projects = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={animation2}
           className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl 
-          font-bold text-start max-w-[90%]"
+          font-bold text-start max-w-[90%] dark:text-white duration-200"
         >
           A small preview of my projects.
         </motion.h2>
@@ -152,6 +153,13 @@ const Projects = () => {
           </motion.div>
         </motion.a>
       </section>
+      <motion.a
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.98 }}
+        className="text-blue-600 text-lg sm:text-xl cursor-pointer pt-10 pb-[5vh]"
+      >
+        Show more
+      </motion.a>
     </section>
   );
 };

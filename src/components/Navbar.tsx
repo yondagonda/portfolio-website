@@ -22,12 +22,12 @@ const Navbar = () => {
       className="flex fixed justify-center flex gap-3 xs:gap-4 sm:px-1.5
        sm:gap-6 md:gap-8 rounded-full top-6 
       backdrop-blur-[10px] z-[100] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#ffffff] 
-      items-center py-1 px-1.5 sm:py-1.5"
+      items-center py-1 px-1.5 sm:py-1.5  dark:bg-[#3f3f3f] dark:opacity-75 duration-200 dark:text-white "
     >
       <button
         onClick={() => handleNavButtonClick('start')}
         className="bg-blue-600 text-white font-bold py-0.5 xs:px-3.5 rounded-full xs:text-[18px]
-        hover:bg-blue-700 duration-150 text-[14px] px-2.5 xs:py-1"
+        hover:bg-blue-700 duration-150 text-[14px] xl:text-[20px] px-2.5 xs:py-1 "
       >
         J
       </button>

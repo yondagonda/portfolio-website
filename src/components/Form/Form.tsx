@@ -69,7 +69,7 @@ const Form = () => {
                 },
               },
             }}
-            className="fixed top-0 left-0 mt-4 ml-4 rounded-3xl flex gap-2 
+            className="fixed top-0 left-0 mt-4 ml-4 rounded-3xl flex gap-2  
       shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-2 px-4 z-[100] bg-blue-600 text-white font-bold"
           >
             <svg
@@ -80,11 +80,11 @@ const Form = () => {
               height={20}
               width={20}
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <path d="M866.133333 258.133333L362.666667 761.6l-204.8-204.8L98.133333 618.666667 362.666667 881.066667l563.2-563.2z"></path>
@@ -99,7 +99,7 @@ const Form = () => {
         onSubmit={sendEmail}
         className="flex flex-col gap-2 px-5 pt-5 pb-4 bg-white rounded-3xl  items-center
   outline outline-1 outline-gray-300 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]
-  margininlineauto sm:w-fit mb-3"
+  margininlineauto sm:w-fit mb-3 dark:bg-[#1d1d1f] duration-200 dark:outline-gray-900"
       >
         <div className="flex flex-col xs:flex-row gap-3 w-full">
           <div className="">
@@ -112,7 +112,8 @@ const Form = () => {
               name="from_name"
               placeholder="Your name"
               className="bg-gray-100 outline outline-gray-200 outline-1 rounded-md p-2 
-        placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full"
+        placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full
+        dark:bg-[#00000059]  dark:outline-gray-900 dark:text-white dark:placeholder:text-gray-500"
               required
             />
           </div>
@@ -125,7 +126,8 @@ const Form = () => {
               onChange={(e) => setEmailInput(e.target.value)}
               name="from_email"
               className="bg-gray-100 outline outline-gray-200 outline-1 rounded-md p-2 
-        placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full"
+        placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full
+        dark:bg-[#00000059]  dark:outline-gray-900 dark:text-white dark:placeholder:text-gray-500"
               placeholder="Your email"
               required
             />
@@ -140,7 +142,7 @@ const Form = () => {
           onChange={(e) => setMessageInput(e.target.value)}
           className="bg-gray-100 outline outline-gray-200 outline-1 rounded-md p-2 
       placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full
-      resize-none"
+      resize-none dark:bg-[#00000059]  dark:outline-gray-900 dark:text-white dark:placeholder:text-gray-500"
           rows={8}
           placeholder="Your message for me"
           required

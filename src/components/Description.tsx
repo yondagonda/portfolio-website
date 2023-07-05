@@ -24,10 +24,15 @@ const Description = () => {
 
   return (
     <section
-      className="flex flex-col justify-center h-[60vh] max-w-[85%] xl:max-w-[1200px]
-    overflow-x-hidden"
+      className="flex flex-col justify-center h-[60vh]
+    overflow-x-hidden dark:bg-[#1d1d1f] duration-200 items-center w-full"
     >
-      <motion.div ref={ref} initial={{ opacity: 0 }} animate={animation}>
+      <motion.div
+        className="max-w-[85%] xl:max-w-[1200px]"
+        ref={ref}
+        initial={{ opacity: 0 }}
+        animate={animation}
+      >
         <h2
           className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center gradient 
         py-3"
