@@ -52,7 +52,7 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="flex flex-col items-center min-h-[100vh] pt-[12vh] w-[100vw] pb-10 dark:bg-[#1d1d1f] duration-200"
+      className="flex flex-col items-center min-h-[100vh] pt-[12vh] w-[100vw] pb-10 dark:bg-[#1d1d1f] duration-150"
     >
       <section className="max-w-[950px] text-center flex flex-col items-center">
         <motion.h3
@@ -60,7 +60,7 @@ const Resume = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={animation}
           className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-2 text-gray-700 font-bold
-          dark:text-gray-300 duration-200"
+          dark:text-gray-300"
         >
           Resume
         </motion.h3>

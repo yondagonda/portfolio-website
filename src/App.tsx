@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,14 +11,10 @@ import Contact from './components/Contact';
 import DarkModeToggle from './components/Buttons/DarkModeToggle';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
   //TODO:
-  // display all project images (will require refactoring of projects)
-  // create readME for CV builder
-  // setup little monitor preview ting
-  // download CV button
-  // linkedIn link
+  // make whileinview animations execute once
+  // download CV button (will need to create a CV first)
+  // make sure github/linkedin is all perfect before finalising
 
   return (
     <div className="App flex justify-center overflow-x-hidden">

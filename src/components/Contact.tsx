@@ -92,7 +92,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center min-h-[75vh] pt-[12vh] bg-gray-100 w-[100vw] dark:bg-black duration-200"
+      className="flex flex-col items-center min-h-[75vh] pt-[12vh] bg-gray-100 w-[100vw] dark:bg-black duration-150"
     >
       <section className="max-w-[800px]">
         <motion.h3
@@ -100,7 +100,7 @@ const Contact = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={animation}
           className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-2 text-gray-700 font-bold 
-          text-center dark:text-gray-300 duration-200"
+          text-center dark:text-gray-300"
         >
           Contact
         </motion.h3>
@@ -109,7 +109,7 @@ const Contact = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={animation2}
           className="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl 
-          font-bold max-w-[90%] py-2 margininlineauto dark:text-white duration-200"
+          font-bold max-w-[90%] py-2 margininlineauto dark:text-white"
         >
           Reach out to me any way you want.
         </motion.h2>
@@ -141,13 +141,14 @@ const Contact = () => {
         >
           <Form />
         </motion.div>
+
         <motion.div
           ref={ref3}
           initial={{ x: 200, opacity: 0 }}
           animate={animation3}
           className="p-4 bg-white rounded-3xl outline outline-1 outline-gray-300 
         shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col gap-2 h-fit max-w-[310px]
-         lg:w-full min-w-[250px] sm:min-w-[200px] dark:bg-[#1d1d1f] duration-200 dark:outline-gray-900"
+         lg:w-full min-w-[250px] sm:min-w-[200px] dark:bg-[#1d1d1f] dark:outline-[#3f3f3f]"
         >
           <a
             href="https://www.linkedin.com/in/johny-ha-63a596189/"

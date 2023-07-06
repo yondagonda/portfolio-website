@@ -22,7 +22,7 @@ const Navbar = () => {
       className="flex fixed justify-center flex gap-3 xs:gap-4 sm:px-1.5
        sm:gap-6 md:gap-8 rounded-full top-6 
       backdrop-blur-[10px] z-[100] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#ffffff] 
-      items-center py-1 px-1.5 sm:py-1.5  dark:bg-[#3f3f3f] dark:opacity-75 duration-200 dark:text-white "
+      items-center py-1 px-1.5 sm:py-1.5  dark:bg-[#3f3f3f] dark:opacity-75 dark:text-white "
     >
       <button
         onClick={() => handleNavButtonClick('start')}

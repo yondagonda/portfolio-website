@@ -99,7 +99,7 @@ const Form = () => {
         onSubmit={sendEmail}
         className="flex flex-col gap-2 px-5 pt-5 pb-4 bg-white rounded-3xl  items-center
   outline outline-1 outline-gray-300 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]
-  margininlineauto sm:w-fit mb-3 dark:bg-[#1d1d1f] duration-200 dark:outline-gray-900"
+  margininlineauto sm:w-fit mb-3 dark:bg-[#1d1d1f] dark:outline-[#3f3f3f]"
       >
         <div className="flex flex-col xs:flex-row gap-3 w-full">
           <div className="">
@@ -113,7 +113,7 @@ const Form = () => {
               placeholder="Your name"
               className="bg-gray-100 outline outline-gray-200 outline-1 rounded-md p-2 
         placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full
-        dark:bg-[#00000059]  dark:outline-gray-900 dark:text-white dark:placeholder:text-gray-500"
+        dark:bg-[#00000059]  dark:outline-[#3f3f3f] dark:text-white dark:placeholder:text-gray-500"
               required
             />
           </div>
@@ -127,7 +127,7 @@ const Form = () => {
               name="from_email"
               className="bg-gray-100 outline outline-gray-200 outline-1 rounded-md p-2 
         placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full
-        dark:bg-[#00000059]  dark:outline-gray-900 dark:text-white dark:placeholder:text-gray-500"
+        dark:bg-[#00000059]  dark:outline-[#3f3f3f] dark:text-white dark:placeholder:text-gray-500"
               placeholder="Your email"
               required
             />
@@ -142,7 +142,7 @@ const Form = () => {
           onChange={(e) => setMessageInput(e.target.value)}
           className="bg-gray-100 outline outline-gray-200 outline-1 rounded-md p-2 
       placeholder:text-gray-600 focus:ring focus:ring-blue-500 duration-150 w-full
-      resize-none dark:bg-[#00000059]  dark:outline-gray-900 dark:text-white dark:placeholder:text-gray-500"
+      resize-none dark:bg-[#00000059]  dark:outline-[#3f3f3f] dark:text-white dark:placeholder:text-gray-500"
           rows={8}
           placeholder="Your message for me"
           required

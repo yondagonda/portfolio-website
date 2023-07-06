@@ -47,20 +47,20 @@ const Home = () => {
       </motion.div>
       <motion.h3
         variants={childVariants}
-        className="text-xl xs:text-2xl py-4 text-gray-700 dark:text-gray-300 duration-200"
+        className="text-xl xs:text-2xl py-4 text-gray-700 dark:text-gray-300"
       >
         Johny Ha
       </motion.h3>
       <motion.h1
         variants={childVariants}
-        className="text-3xl xs:text-4xl sm:text-6xl font-bold text-center pt-2 dark:text-white duration-200"
+        className="text-3xl xs:text-4xl sm:text-6xl font-bold text-center pt-2 dark:text-white"
       >
         Software Engineer
       </motion.h1>
       <motion.p
         variants={childVariants}
         className="sm:max-w-[450px] max-w-[75vw] text-xs xs:text-base text-center py-6 
-        text-gray-700  dark:text-gray-300 duration-200"
+        text-gray-700  dark:text-gray-300"
       >
         Passionate about problem solving, I thrive on the thrill of unraveling
         intricate puzzles and persisting until I discover the most effective
@@ -80,7 +80,7 @@ const Home = () => {
           stroke="#ffffff"
           height={20}
           width={20}
-          className="group-hover:translate-y-[3px] duration-200 fill-white"
+          className="group-hover:translate-y-[3px] duration-150 fill-white"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g

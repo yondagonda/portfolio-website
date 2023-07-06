@@ -4,6 +4,7 @@ import lighthouse from '../assets/lighthouse.png';
 import { useInView } from 'react-intersection-observer';
 import { motion, spring } from 'framer-motion';
 import { useAnimation } from 'framer-motion';
+import examplevideo from '../assets/example video.mp4';
 
 const About = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
@@ -115,11 +116,13 @@ const About = () => {
     }
   }, [inView5, inView6]);
 
+  const url = 'https://streamable.com/e/zcqnp2?autoplay=1&nocontrols=1';
+
   return (
     <section
       id="about"
       className="flex flex-col min-h-[105vh] items-center pt-[12vh] 
-    bg-gray-100 w-[100vw] dark:bg-black duration-200"
+    bg-gray-100 w-[100vw] dark:bg-black duration-150"
     >
       <div className="flex flex-col items-center xl:items-start">
         <section className="flex flex-col items-start w-[85%] max-w-[850px] xl:pl-[10vw] 2xl:pl-8">
@@ -128,7 +131,7 @@ const About = () => {
             initial={{ y: 50, opacity: 0 }}
             animate={animation}
             className="text-lg xs:text-xl sm:text-2xl md:text-3xl pb-4 text-gray-700 font-bold 
-            dark:text-gray-300 duration-200"
+            dark:text-gray-300"
           >
             About Me
           </motion.h3>
@@ -137,7 +140,7 @@ const About = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={animation2}
             className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl 
-            font-bold text-start max-w-[90%] dark:text-white duration-200"
+            font-bold text-start max-w-[90%] dark:text-white"
           >
             My tech stack and expertise.
           </motion.h2>
@@ -150,8 +153,8 @@ const About = () => {
           <article
             className="bg-white rounded-2xl outline-[1px] outline outline-gray-200 
             text-xl py-6 px-5 sm:px-8 md:px-10 md:py-10 max-w-[85%] sm:max-w-[580px]
-            margininlineauto mb-3 md:mb-5 lg:mb-0 md:max-w-[80%] lg:max-w-full dark:bg-[#1d1d1f] duration-200
-            dark:outline-gray-900"
+            margininlineauto mb-3 md:mb-5 lg:mb-0 md:max-w-[80%] lg:max-w-full dark:bg-[#1d1d1f] duration-150
+            dark:outline-[#3f3f3f]"
           >
             <h4 className="font-bold text-lg sm:text-2xl dark:text-white duration-200">
               Problem solver and tech enthusiast at heart
@@ -184,7 +187,7 @@ const About = () => {
               animate={animation3}
               className="bg-white rounded-2xl outline-[1px] outline outline-gray-200 
               sm:px-8 sm:py-6 px-4 py-4 max-w-[85%] sm:max-w-[580px] margininlineauto h-fit
-              lg:py-8 dark:bg-[#1d1d1f] dark:outline-gray-900  duration-200 "
+              lg:py-8 dark:bg-[#1d1d1f] dark:outline-[#3f3f3f]  "
             >
               <h4 className="font-bold sm:text-xl dark:text-white duration-200">
                 Attention to Detail
@@ -201,7 +204,7 @@ const About = () => {
               animate={animation4}
               className="bg-white rounded-2xl outline-[1px] outline outline-gray-200 
               sm:px-8 sm:py-6 px-4 py-4 max-w-[85%] margininlineauto h-fit mt-2 sm:mt-0
-              sm:max-w-[580px] lg:py-8 dark:bg-[#1d1d1f] dark:outline-gray-900  duration-200"
+              sm:max-w-[580px] lg:py-8 dark:bg-[#1d1d1f] dark:outline-[#3f3f3f] "
             >
               <div className="flex items-center gap-1.5 sm:items-baseline">
                 <h4 className="font-bold sm:text-xl whitespace-nowrap dark:text-white duration-200">
@@ -220,8 +223,8 @@ const About = () => {
           </div>
         </section>
         <section
-          className="gradientbg xl:max-w-[1200px] w-full md:grid md:grid-cols-2 rounded-2xl my-5
-        p-3 lg:p-8 max-w-[85%] margininlineauto mb-14 sm:mt-8"
+          className="gradientbg xl:max-w-[1200px] w-full grid md:grid-cols-2 rounded-2xl my-5
+        p-3 lg:p-6 max-w-[87%] margininlineauto mb-14 sm:mt-8 gap-3 md:items-center"
         >
           <div className="text-white p-2 sm:p-10 flex flex-col gap-4">
             <motion.h3
@@ -236,14 +239,38 @@ const About = () => {
               ref={ref6}
               initial={{ scale: 0 }}
               animate={animation6}
-              className="text-sm sm:text-lg"
+              className="text-sm sm:text-lg md:text-base lg:text-lg"
             >
               Today I work with TypeScript in React, Next.js as a full stack
               framework, and Tailwind for CSS. As you can probably tell, I also
               enjoy working with motion libraries - e.g. Framer Motion
             </motion.p>
           </div>
-          <div>{/* MONITOR THINGY */}</div>
+          <div className="margininlineauto flex flex-col items-center p-3 mb-[2vh] xs:px-10 sm:px-14 md:px-4">
+            <div className="border border-black border-[5px] rounded-md w-fit">
+              <video
+                src={examplevideo}
+                title="demo of projects"
+                height={253}
+                width={442.75}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            </div>
+            <div
+              className="bg-gray-300 w-[20%] h-[36px] xs:h-[46px] sm:h-[60px] md:h-[48px] lg:h-[54px] xl:h-[60px]
+            z-[10]"
+            ></div>
+            <div className="w-full relative">
+              <div className="border-b-4 absolute border border-black/50 w-full blur-[6px]"></div>
+              <div
+                className="border w-[20%] h-[10px] bg-gray-400 outline outline-gray-400 outline-[0.5px]
+            rounded-b-sm margininlineauto absolute left-0 right-0 z-[10]"
+              ></div>
+            </div>
+          </div>
         </section>
       </div>
     </section>

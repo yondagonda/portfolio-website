@@ -91,7 +91,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center min-h-[120vh] pt-[11vh] bg-gray-100 w-[100vw] dark:bg-black duration-200"
+      className="flex flex-col items-center min-h-[120vh] pt-[11vh] bg-gray-100 w-[100vw] dark:bg-black duration-150"
     >
       <section className="max-w-[950px] w-[87%] text-start 2xl:mr-32">
         <h3
@@ -116,8 +116,8 @@ const Skills = () => {
           initial={{ scale: 0 }}
           animate={animation}
           className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
-          py-1 pb-2.5 px-4 sm:px-5 md:py-2 md:px-6 lg:py-5 lg:px-12 dark:bg-[#1d1d1f] duration-200
-          dark:outline-gray-900"
+          py-1 pb-2.5 px-4 sm:px-5 md:py-2 md:px-6 lg:py-5 lg:px-12 dark:bg-[#1d1d1f]
+          dark:outline-[#3f3f3f]"
         >
           <h4 className="font-bold text-lg sm:text-xl py-4 dark:text-white duration-200">
             Languages
@@ -298,8 +298,8 @@ const Skills = () => {
             initial={{ scale: 0 }}
             animate={animation2}
             className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white
-            w-fit pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 sm:h-fit dark:bg-[#1d1d1f] duration-200
-            dark:outline-gray-900"
+            w-fit pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 sm:h-fit dark:bg-[#1d1d1f]
+            dark:outline-[#3f3f3f]"
           >
             <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
               Frameworks
@@ -378,8 +378,8 @@ const Skills = () => {
             initial={{ scale: 0 }}
             animate={animation3}
             className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit 
-            pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 dark:bg-[#1d1d1f] duration-200
-            dark:outline-gray-900"
+            pt-1 pb-3 px-5 md:py-2 md:px-6 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 dark:bg-[#1d1d1f]
+            dark:outline-[#3f3f3f]"
           >
             <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
               Libraries
@@ -484,8 +484,8 @@ const Skills = () => {
             initial={{ scale: 0 }}
             animate={animation4}
             className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
-            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 sm:h-fit dark:bg-[#1d1d1f] duration-200
-            dark:outline-gray-900"
+            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 sm:h-fit dark:bg-[#1d1d1f]
+            dark:outline-[#3f3f3f]"
           >
             <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
               Collaborative Work
@@ -566,8 +566,8 @@ const Skills = () => {
               initial={{ scale: 0 }}
               animate={animation5}
               className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
-            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 sm:h-fit dark:bg-[#1d1d1f] duration-200
-            dark:outline-gray-900"
+            pt-1 pb-3 px-5 md:py-2 md:px-6  lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 sm:h-fit dark:bg-[#1d1d1f]
+            dark:outline-[#3f3f3f]"
             >
               <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
                 Platforms
@@ -614,8 +614,8 @@ const Skills = () => {
               initial={{ scale: 0 }}
               animate={animation6}
               className="outline-[1px] outline outline-gray-200 rounded-2xl bg-white w-fit
-            pt-1 pb-3 px-2.5 md:py-2 md:px-9  xs:px-5 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 dark:bg-[#1d1d1f] duration-200
-            dark:outline-gray-900"
+            pt-1 pb-3 px-2.5 md:py-2 md:px-9  xs:px-5 lg:pt-4 md:pb-5 lg:px-12 mt-2 sm:mt-0 dark:bg-[#1d1d1f]
+            dark:outline-[#3f3f3f]"
             >
               <h4 className="font-bold text-lg sm:text-xl py-3 sm:py-4  dark:text-white duration-200">
                 Code Editor
