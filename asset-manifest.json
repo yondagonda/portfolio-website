@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.632ca42b.css",
-    "main.js": "/portfolio-website/static/js/main.16515950.js",
+    "main.js": "/portfolio-website/static/js/main.2f48767a.js",
     "static/media/example video.mp4": "/portfolio-website/static/media/example video.1b25b02ec8f41803a883.mp4",
     "static/media/project1.JPG": "/portfolio-website/static/media/project1.99f036a7e801e05e43f4.JPG",
     "static/media/project3.jpg": "/portfolio-website/static/media/project3.d16d8d83a0a4f731f506.jpg",
     "static/media/project2.JPG": "/portfolio-website/static/media/project2.7e77e7a292abe23fde93.JPG",
     "static/media/project4.JPG": "/portfolio-website/static/media/project4.d77f5017f06f19af7987.JPG",
+    "static/media/Johny Ha CV.pdf": "/portfolio-website/static/media/Johny Ha CV.34c0180e2a8eece14ac0.pdf",
     "static/media/detail.png": "/portfolio-website/static/media/detail.b89fa6172e46daa3344c.png",
     "static/media/lighthouse.png": "/portfolio-website/static/media/lighthouse.4f70427844e892719782.png",
     "static/media/profile.jpg": "/portfolio-website/static/media/profile.fa8e023a777eb3eae88b.jpg",
     "static/media/firebase.png": "/portfolio-website/static/media/firebase.6ea3b0b39b97b0e49515.png",
     "index.html": "/portfolio-website/index.html",
     "main.632ca42b.css.map": "/portfolio-website/static/css/main.632ca42b.css.map",
-    "main.16515950.js.map": "/portfolio-website/static/js/main.16515950.js.map"
+    "main.2f48767a.js.map": "/portfolio-website/static/js/main.2f48767a.js.map"
   },
   "entrypoints": [
     "static/css/main.632ca42b.css",
-    "static/js/main.16515950.js"
+    "static/js/main.2f48767a.js"
   ]
 }
