@@ -1,14 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import detail from '../assets/detail.png';
 import lighthouse from '../assets/lighthouse.png';
 import { useInView } from 'react-intersection-observer';
-import { motion, spring } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useAnimation } from 'framer-motion';
 import examplevideo from '../assets/example video.mp4';
 
 const About = () => {
-  const [ref, inView] = useInView({ triggerOnce: false });
-  const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref2, inView2] = useInView({ triggerOnce: true });
 
   const animation = useAnimation();
   const animation2 = useAnimation();
@@ -46,8 +46,8 @@ const About = () => {
     }
   }, [inView, inView2]);
 
-  const [ref3, inView3] = useInView({ triggerOnce: false });
-  const [ref4, inView4] = useInView({ triggerOnce: false });
+  const [ref3, inView3] = useInView({ triggerOnce: true });
+  const [ref4, inView4] = useInView({ triggerOnce: true });
 
   const animation3 = useAnimation();
   const animation4 = useAnimation();
@@ -81,8 +81,8 @@ const About = () => {
     }
   }, [inView3, inView4]);
 
-  const [ref5, inView5] = useInView({ triggerOnce: false });
-  const [ref6, inView6] = useInView({ triggerOnce: false });
+  const [ref5, inView5] = useInView({ triggerOnce: true });
+  const [ref6, inView6] = useInView({ triggerOnce: true });
 
   const animation5 = useAnimation();
   const animation6 = useAnimation();
@@ -115,8 +115,6 @@ const About = () => {
       });
     }
   }, [inView5, inView6]);
-
-  const url = 'https://streamable.com/e/zcqnp2?autoplay=1&nocontrols=1';
 
   return (
     <section

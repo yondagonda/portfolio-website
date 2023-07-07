@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import emailjs, { send } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
@@ -12,7 +12,7 @@ const Form = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   const sendEmail = (e: any) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+    e.preventDefault();
     emailjs
       .sendForm(
         'service_isebdnh',
@@ -43,7 +43,6 @@ const Form = () => {
 
   return (
     <>
-      {/* <button onClick={() => setShowConfirmation(true)}>test</button> */}
       <AnimatePresence>
         {showConfirmation && (
           <motion.dialog

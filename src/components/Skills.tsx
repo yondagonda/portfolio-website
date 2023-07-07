@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { InView, useInView } from 'react-intersection-observer';
+import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import firebaseicon from '../assets/firebase.png';
 
 const Skills = () => {
-  const [ref, inView] = useInView({ triggerOnce: false });
-  const [ref2, inView2] = useInView({ triggerOnce: false });
-  const [ref3, inView3] = useInView({ triggerOnce: false });
+  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref2, inView2] = useInView({ triggerOnce: true });
+  const [ref3, inView3] = useInView({ triggerOnce: true });
 
   const animation = useAnimation();
   const animation2 = useAnimation();

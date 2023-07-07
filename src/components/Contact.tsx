@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, spring } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
@@ -7,8 +7,8 @@ import CopyEmailButton from './Buttons/CopyEmailButton';
 import Form from './Form/Form';
 
 const Contact = () => {
-  const [ref, inView] = useInView({ triggerOnce: false });
-  const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref2, inView2] = useInView({ triggerOnce: true });
 
   const animation = useAnimation();
   const animation2 = useAnimation();
@@ -46,8 +46,8 @@ const Contact = () => {
     }
   }, [inView, inView2]);
 
-  const [ref3, inView3] = useInView({ triggerOnce: false });
-  const [ref4, inView4] = useInView({ triggerOnce: false });
+  const [ref3, inView3] = useInView({ triggerOnce: true });
+  const [ref4, inView4] = useInView({ triggerOnce: true });
 
   const animation3 = useAnimation();
   const animation4 = useAnimation();

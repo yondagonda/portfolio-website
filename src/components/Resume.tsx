@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
+import cv from '../assets/CV/Johny Ha CV.pdf';
 
 const Resume = () => {
   const handleNavButtonClick = (sectionId: string) => {
@@ -10,8 +11,8 @@ const Resume = () => {
     section?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const [ref, inView] = useInView({ triggerOnce: false });
-  const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref2, inView2] = useInView({ triggerOnce: true });
 
   const animation = useAnimation();
   const animation2 = useAnimation();
@@ -579,9 +580,12 @@ const Resume = () => {
               Additionally, you can download my resume below.
             </p>
             <div className="flex flex-col gap-2 items-center">
-              <button
+              <a
+                href={cv}
+                download="Johny Ha CV"
                 className="flex items-center gap-2 px-6 py-2 bg-blue-500 rounded-3xl w-fit
-              group shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+              group shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] cursor-pointer"
+                rel="noreferrer"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -638,7 +642,7 @@ const Resume = () => {
                   </g>
                 </svg>
                 <h4 className="text-xl text-white">Download CV</h4>
-              </button>
+              </a>
               <button
                 onClick={() => handleNavButtonClick('contact')}
                 className="flex items-center gap-2 px-6 py-2 bg-white rounded-3xl w-fit

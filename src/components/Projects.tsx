@@ -9,8 +9,8 @@ import project3 from '../assets/projectImages/project3.jpg';
 import project4 from '../assets/projectImages/project4.JPG';
 
 const Projects = () => {
-  const [ref, inView] = useInView({ triggerOnce: false });
-  const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref2, inView2] = useInView({ triggerOnce: true });
 
   const animation = useAnimation();
   const animation2 = useAnimation();
