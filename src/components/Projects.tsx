@@ -80,7 +80,7 @@ const Projects = () => {
       2xl:max-w-[1300px]"
       >
         <motion.a
-          href="https://twitter-clone-o5prpumh2-yondagonda.vercel.app/"
+          href="https://twitter-clone-yondagonda.vercel.app/"
           target="_blank"
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.99 }}
